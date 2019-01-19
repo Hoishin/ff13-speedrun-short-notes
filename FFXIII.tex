@@ -1,0 +1,1521 @@
+\documentclass[a4paper, fontsize=11pt, DIV=26, parskip=full]{scrartcl}
+\usepackage{color}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage[page]{appendix}
+\usepackage{pifont}
+
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+\tcbset{top=1.5mm, bottom=0mm}
+
+\usepackage{scrlayer-scrpage}
+\clearpairofpagestyles
+\ofoot{Chapter \thesection}
+\cfoot{\thepage}
+
+\usepackage[bookmarks=true]{hyperref}
+
+\setlength{\parskip}{0mm}
+\let\olditem\item
+\renewcommand{\item}{%
+	\olditem\vspace{-5pt}}
+\renewcommand*{\sectionformat}{}
+\RedeclareSectionCommand[font=\huge\centering]{section}
+
+
+\newenvironment{fight}[1]{
+	\begin{tcolorbox}[enhanced, fonttitle={\bfseries}, title=#1]
+		\begin{itemize}[leftmargin=*]
+	}{\end{itemize}\end{tcolorbox}}
+\newenvironment{menu}{
+	\begin{tcolorbox}[enhanced, colframe=yellow!50!red,	colbacktitle=yellow!50!red, coltitle=red!25!black, title=\textbf{Menu}]
+		\begin{itemize}[leftmargin=*]
+	}{\end{itemize}\end{tcolorbox}}
+\newenvironment{shop}[1]{
+	\begin{tcolorbox}[enhanced, colframe=red!75!black, title=\textbf{Shop \ding{220} \textit{#1}}]
+		\begin{itemize}[leftmargin=*]
+		}{\end{itemize}\end{tcolorbox}}
+\newenvironment{upgrade}{
+	\begin{tcolorbox}[enhanced, colframe=green!50!black, title=\textbf{Upgrade}]
+		\begin{itemize}[leftmargin=*]
+		}{\end{itemize}\end{tcolorbox}}
+\newenvironment{mainlist}{\begin{dinglist}{113}}{\end{dinglist}}
+
+
+\newcommand{\role}[2]{\textbf{#2#1}}
+\newcommand{\com}{\role{COM}{\color{red}}}
+\newcommand{\rav}{\role{RAV}{\color{blue}}}
+\newcommand{\sen}{\role{SEN}{\color[rgb]{0.75,0.75,0}}}
+\newcommand{\med}{\role{MED}{\color{green}}}
+\newcommand{\syn}{\role{SYN}{\color[rgb]{0.58,0,0.83}}}
+\newcommand{\sab}{\role{SAB}{\color{gray}}}
+
+
+\renewcommand{\skip}{{\textcolor{blue}{CS}}}
+\newcommand{\skips}[1]{{\textcolor{blue}{#1 CS's}}}
+\newcommand{\dodge}[1]{{\textcolor[rgb]{1,0,0}{#1}}}
+\newcommand{\shortfight}[1]{\colorbox[rgb]{0.3,0.3,0.3}{\bfseries\textcolor{white}{#1}}}
+\newcommand{\newrole}[1]{{[}#1{]}}
+\renewcommand{\to}{ \ding{219} }
+\renewcommand{\star}{\ding{72} }
+
+\begin{document}
+	
+	\textbf{\Large Based on LewdDolphin's Snow route notes, reformat by Hoishin}\\
+
+	Timing starts when you press New Game.
+	
+	\hrulefill
+	\section{Chapter 1}
+	
+	\begin{mainlist}
+		\item \skips{2}
+		\item \shortfight{Manasvin Warmech 1} \textbf{Auto-battle} x3 |\skip |\textbf{Auto-battle} x3\to\textbf{Attack}\to\textbf{Auto-battle} |\skip
+		\item \skip|\skip
+		\item \shortfight{Pantheron \& PSICOM Warden} \textbf{Auto-battle} Pantheron\to\textbf{Attack} Warden\to\textbf{Auto-battle} Pantheron |\skip
+		\item \skip|\skip
+		\item \shortfight{PSICOM Marauder} \textbf{Auto-battle} Marauder\to \textbf{Blitz} |\skips{2}
+		\item \skip|\skip
+		\item \shortfight{Pantherons \& PSICOM Wardens} \textbf{Hand Grenade} Warden A\to\textbf{Repeat} Warden B\to\textbf{Repeat} Pantheron A
+		\item \skip|\skip
+		\item \shortfight{Beta Behemoth} \textbf{Potion}\to \textbf{Auto-battle} x2\to \textbf{Auto-battle} at 1.5 ATB\to \textbf{Auto-battle} x2\to \textbf{Auto-battle} at 1.99 ATB\to \textbf{Auto-battle} |\skip|Save prompt|\skip
+		\item \shortfight{Myrmidon} \textbf{Auto-battle} at 1.5 ATB\to \textbf{Auto-battle}\to \textbf{Attack}\to \textbf{Auto-battle} at 1.5 ATB\to \textbf{Auto-battle}\to \textbf{\textbf{Potion}}\to \textbf{Auto-battle} |\skips{4}
+		\item Grab \textbf{Power Circle}
+	\end{mainlist}
+	\begin{menu}
+		\item Equipment: Snow: Optimize Offensive
+	\end{menu}
+	\begin{mainlist}
+		\item \skip
+		\item \shortfight{Warden \& Enforcers} \textbf{Hand Grenade} Enforcer A\to \textbf{Repeat} Enforcer B\to \textbf{Attack x2} Warden
+		\item \skips{2}|\skip|Save prompt
+	\end{mainlist}
+	
+	\hrulefill
+	\section{Chapter 2}
+	
+	\begin{mainlist}
+		\item \skips{2}
+		\item \shortfight{Pantheron} \textbf{Attack x2}\to \textbf{Repeat} |\skip
+		\item \shortfight{Zwerg Scandroids} (50\% Deceptisol) \textbf{Auto-battle} at 2.5 ATB to different target
+		\item \shortfight{Zwerg Scandroids} (50\% Deceptisol) \textbf{Auto-battle} at 2.5 ATB to different target
+		\item \skips{2}
+		\item \shortfight{Pantherons} (12\% Fortisol) \textbf{Hand Grenade} x3 |Activate switch|\skips{2}
+		\item \shortfight{Zwerg Scandroids} Wait for 32 seconds |Grab \textbf{Phoenix Down}
+		\item \shortfight{Pantheron \& Scandroids} (12\% Fortisol) \textbf{Blitz} Pantheron |Grab \textbf{Gladius}|\skips{2}
+		\item \shortfight{Pantheron \& Scandroids} (12\% Deceptisol) \textbf{Hand Grenades} x2 |Activate switch|\skip
+	\end{mainlist}
+	\begin{menu}
+		\item Settings: Battle Speed Slow
+	\end{menu}
+	\begin{mainlist}
+		\item \skips{2}
+		\item \shortfight{Zwerg Scandroids} (96\% Fortisol) \textbf{Attack}\to Wait for 32 seconds |Grab \textbf{Fortisol}
+	\end{mainlist}
+	\begin{menu}
+		\item Settings: Battle Speed Normal
+	\end{menu}
+	\begin{mainlist}
+		\item \skip
+		\item \shortfight{Ghouls} (12\% Fortisol) \textbf{Hand Grenade} x3 |\skips{2}
+		\item \shortfight{Ghouls} (12\% Fortisol) \textbf{Blitz} or \textbf{Attack x2} |Grab \textbf{Power Wristband}
+	\end{mainlist}
+	\begin{menu}
+		\item Equipment: Lightning: Optimize Offensive
+	\end{menu}
+	\begin{mainlist}
+		\item \shortfight{Ghast (If failed)} (96\% Deceptisol) \textbf{Auto-battle} x2\to\textbf{Attack}\to Wait for 56 seconds
+		\item Ghouls ahead drop: Fortisol, Deceptisol, Deceptisol, Fortisol, Deceptisol
+		\item \shortfight{Ghoul (If farming)} (96\% either one) Wait for 33 seconds
+		\item Use \textbf{Fortisol} while on elevator
+		\item \skips{3}|\skip
+		\item \shortfight{Anima} \textbf{Blitz} Anima until left arm dies\to \textbf{Attack x2} |\skips{2}|Save prompt|\skips{3}|Save prompt
+	\end{mainlist}
+	
+	\hrulefill
+	\section{Chapter 3}
+	
+	\begin{mainlist}
+		\item \skip
+		\item \shortfight{Ghast} \textbf{Auto-battle} non-default target\to \textbf{Blitz}\to \textbf{Attack x2} |\skip
+		\item \skips{3}
+	\end{mainlist}
+	\begin{shop}{B\&W Outfitters}
+		\item Sell: \textbf{Phoenix Down} and/or \textbf{Credit Chip} (1000 gil)
+		\item Buy: \textbf{Magician's Mark}
+	\end{shop}
+	\begin{menu}
+		\item Paradigms
+		\begin{tabular}{cccl}
+			(\rav)&\rav&\rav&\\
+			\com&\sen&\med&\\
+			\newrole{\com}&\com&\rav& --- default\\
+			\newrole{\com}&\com&\rav&
+		\end{tabular}
+		\item Crystarium
+		\begin{itemize}
+			\item Lightning: [\com: Next]
+			\item Snow: [\com: Both side]
+		\end{itemize}
+		\item Equipment
+		\begin{itemize}
+			\item Vanille: Optimize Balanced
+			\item Sazh: Optimize Balanced
+			\item Snow: Optimize Balanced
+		\end{itemize}
+	\end{menu}
+	\begin{mainlist}
+		\item \skip
+		\item \shortfight{PSICOM Wardens} \textbf{Auto-battle} |\skip
+		\item \skip|\skip
+	\end{mainlist}
+	\begin{fight}{Manasvin Warmech (2)}
+		\item [3] \com/\rav/\rav: \textbf{Libra}\to\textbf{Auto-battle} |Lightning or the beam
+		\item [4] \com/\rav/\rav: \textbf{Auto-battle} |Vanille
+		\item [1] \rav/\rav/\rav: \textbf{Potion} (If HP is less than 120)\to \textbf{Auto-chain} when Crystal Rain|Vanille
+		\item [3] \com/\com/\rav: \textbf{Auto-battle} |Vanille
+		\item [2] \com/\sen/\med: Shift after provoke lands
+		\item [3] \com/\com/\rav: \textbf{Auto-battle} |Cancel Snow
+		\item [4] \com/\com/\rav: \textbf{Auto-battle}\to\textbf{Attack x2}\to\textbf{Auto-battle} |Lightning or cancel Snow
+		\item [3] \com/\com/\rav: \textbf{Auto-battle} |\skip
+	\end{fight}
+	\begin{menu}
+		\item Paradigms
+		\begin{tabular}{cccl}
+			\com&\rav&\rav&--- default\\
+			\com&\med&\rav&\\
+			\newrole{\rav}&\rav&\rav&\\
+			\newrole{\rav}&\rav&\rav&\\
+			\newrole{\com}&\rav&\rav&
+		\end{tabular}
+	\end{menu}
+	\begin{mainlist}
+		\item \skip|\skip
+	\end{mainlist}
+	\begin{fight}{Alpha Behemoth}
+		\item [1] \com/\rav/\rav: \textbf{Auto-battle} |Swipe
+		\item [3] \rav/\rav/\rav: \textbf{Auto-chain} x2 |Cancel Sazh (2nd Fire)
+		\item [4] \rav/\rav/\rav: \textbf{Auto-chain} |Vanille
+		\item [1] \com/\rav/\rav: \textbf{Attack x3}
+		\item [5] \com/\rav/\rav: \textbf{Repeat}\to Refresh with [1]
+	\end{fight}
+	\begin{mainlist}
+		\item \skip|\skip|\skip|Grab \textbf{Phoenix Down} and \textbf{Librascope x2}|\skip
+	\end{mainlist}
+	\begin{fight}{Garuda Interceptor}
+		\item [1] \com/\rav/\rav: \textbf{Attack x3} |Midair
+		\item [5] \com/\rav/\rav: \textbf{Repeat}\to \textbf{Attack}\to \textbf{Repeat} |Midair
+		\item [1] \com/\rav/\rav: \textbf{Repeat} |\skips{2}
+		\item [1] \com/\rav/\rav: \textbf{Attack x3} |Midair
+		\item [3] \rav/\rav/\rav: \textbf{Auto-chain} |Lightning
+		\item [4] \rav/\rav/\rav: \textbf{Auto-chain} |Vanille or Sazh
+		\item [3] \rav/\rav/\rav: \textbf{Auto-chain} x2
+		\item [1] \com/\rav/\rav: \textbf{Repeat}\to Refresh with [5] |\skip|Save prompt|\skip
+	\end{fight}
+	\begin{mainlist}
+		\item \shortfight{PSICOM Rangers} \textbf{Attack x3} Ranger C\to \textbf{Repeat} full HP |\skip
+		\item \shortfight{Shiva Sisters} \textbf{Attack-Ruin-Attack}\to\textbf{Froststrike x3}\to\sen-tank |\skips{5}|Save prompt
+	\end{mainlist}
+	
+	\hrulefill
+	\section{Chapter 4}
+	\begin{mainlist}
+		\item \skips{2}
+		\item \shortfight{Pantherons} \textbf{Blitz} Pantheron C\to \textbf{Attack x3} Pantheron A |\skip
+		\item \skips{3}|\skips{4}
+	\end{mainlist}
+	\begin{menu}
+		\item Paradigms
+		\begin{tabular}{ccl}
+			\rav&\rav&\\
+			\syn&\sab&\\
+			\rav&\med&\\
+			\rav&\newrole{\sab}&--- default\\
+			\newrole{\rav}&\rav&
+		\end{tabular}
+		\item Crystarium: Vanille: [\rav: \textbf{Water}]
+	\end{menu}
+	\begin{fight}{Pulsework Soldier \& Watchdrone x3}
+		\item [4] \rav/\sab: Target Pulseworker\to \textbf{Libra} Watchdrone\to \textbf{Auto-chain} |Sazh
+		\item [2] \syn/\sab: \textbf{Auto-support} x2 |Vanille
+		\item If Pulsework Soldier starggered with first cast: kill some Watchdrones first
+		\begin{itemize}
+			\item [1] \rav/\rav: \textbf{Auto-chain} couple Fires |Vanille
+			\item [5] \rav/\rav: \textbf{Auto-chain}\to Refresh with [1]
+		\end{itemize}
+		\item If Pulsework Soldier staggered with second cast: kill Pulsework Soldier first
+		\begin{itemize}
+			\item [1] \rav/\rav: \textbf{Auto-battle} Pulsework Soldier after Vanille casts\to Refresh with [5]
+		\end{itemize}
+		\item |Activate switch|\skip
+	\end{fight}
+	\begin{mainlist}
+		\item Activate fan|\skip|\skips{3}
+		\item \shortfight{Pulsework Soldier} \textbf{Auto-chain}\to [4] Insta-shift\to [1] \textbf{Auto-chain} x2 |Grab \textbf{Ninurta}
+		\item \skip|\skip
+	\end{mainlist}
+	\begin{menu}
+		\item Paradigms
+		\begin{tabular}{cccl}
+			\rav & \com       & \rav   &             \\
+			\syn & \com       & \sab   &             \\
+			\rav & \com       & (\rav) &             \\
+			\rav & \rav       & \sab   & --- default \\
+			\rav & {[}\rav{]} & \rav   &             \\
+			\rav & {[}\rav{]} & \rav   &            
+		\end{tabular}
+		\item Crystarium
+		\begin{itemize}
+			\item Sazh: [\syn: All]
+			\item Lightning: [\com: \textbf{Powerchain}]|[\rav: \textbf{Str+10} OOR\to \textbf{HP+15} after Water]
+			\item Vanille: [\sab: Second last]
+			\item Hope: [\rav: Two]
+		\end{itemize}
+	\end{menu}
+	\begin{fight}{Incubus \& Succubus}
+		\item [4] \rav/\rav/\sab: Target Succubus
+		\item [2] \syn/\com/\sab: \textbf{Auto-support}\to \textbf{Faith} Vanille\to \textbf{Libra} |Cancel Lightning
+		\item [1] \rav/\com/\rav: \textbf{Auto-chain}\to Refresh with [3] |Activate switch|\skip
+	\end{fight}
+	\begin{mainlist}
+		\item \skip
+	\end{mainlist}
+	\begin{fight}{Dreadnought}
+		\item [4] \rav/\rav/\sab: \textbf{Libra}\to \textbf{Auto-chain} |Cancel Lightning
+		\item [6] \rav/\rav/\rav: |Lightning
+		\item [2] \syn/\com/\sab: \textbf{Auto-support}
+		\item [6] \rav/\rav/\rav: ([4] if missing debuff) \textbf{Auto-chain} |Cancel Lightning's 2nd string 
+		\item [5] \rav/\rav/\rav: \textbf{Auto-chain}\to \textbf{\textbf{Potion}} |Stagger
+		\item [1] \rav/\com/\rav: \textbf{Auto-chain}\to Refresh with [3] |\skip
+		\item [1] \rav/\com/\rav: \textbf{Auto-chain}
+		\item [6] \rav/\rav/\rav: |Cancel Lightning
+		\item [2] \syn/\com/\sab: \textbf{Auto-support}\to \textbf{Faith} Vanille
+		\item [4] \rav/\rav/\sab: \textbf{Auto-chain}
+		\item [5] \rav/\rav/\rav: \textbf{Auto-chain}
+		\item [6] \rav/\rav/\rav: \textbf{Auto-chain}\to \textbf{\textbf{Potion}} |Stagger
+		\item [1] \rav/\com/\rav: \textbf{Auto-chain} x2 |Cancel Lightning
+		\item [2] \syn/\com/\sab: Shift after Deprotect/Deshell
+		\item [1] \rav/\com/\rav: \textbf{Auto-chain} x2 |Cancel Lightning
+		\item [3] \rav/\com/\rav: \textbf{Auto-chain} x2 |\skip
+	\end{fight}
+	\begin{menu}
+		\item Equipment
+		\begin{itemize}
+			\item Hope: Equip \textbf{Ninurta} and \textbf{Silver Bangle}
+			\item Sazh: Remove \textbf{Doctor's Code}
+		\end{itemize}
+	\end{menu}
+	\begin{mainlist}
+		\item \skips{2}
+		\item \shortfight{Corps Gunners \& PSICOM Tracker} \textbf{Attack-Blitz} Tracker\to [2] \textbf{Repeat}\to \textbf{Blitz} |\skips{3}|\skip
+		\item \shortfight{PSICOM Trackers} \textbf{Attack-Blitz} x2\to \textbf{Blitz} |\skip|Hit 25|\skip|Grab \textbf{Thickened Hide x20}
+	\end{mainlist}
+	\begin{menu}
+		\item Paradigms
+		\begin{tabular}{ccl}
+			\com       & \rav &             \\
+			\com       & \syn & --- default \\
+			\med       & \med &             \\
+			\rav       & \rav &             \\
+			{[}\rav{]} & \rav &            
+		\end{tabular}
+		\item Equipment: Lightning: Equip \textbf{Blazefire Saber} and \textbf{Doctor's Code}
+	\end{menu}
+	\begin{shop}{Lenora's Garage}
+		\item Sell: Weapons
+		\item Buy: \textbf{Polymer Emulsion} x49\to\textbf{\textbf{Potion}} x11
+	\end{shop}
+	\begin{upgrade}
+		\item \underline{Blazefire Saber}: \textbf{Thickened Hides} (\to\textbf{Cie'th Tear}\to \textbf{Tear of Frustration}\to Others)\to \textbf{Polymer Emulsion} x49
+	\end{upgrade}
+	\begin{mainlist}
+		\item \skip
+	\end{mainlist}
+	\begin{fight}{Odin}
+		\item [2] \com/\syn: \textbf{Attack x2}\to \textbf{Repeat} |Prevent backflip
+		\item [4] \rav/\rav: \textbf{\textbf{Potion}}\to \textbf{Auto-chain}\to \textbf{\textbf{Potion}}\to \textbf{Water-Thunder-Water}
+		\item [5] \rav/\rav: \textbf{Repeat} and \textbf{\textbf{Potion}}\to Refresh with [4] |\skip|\skip
+	\end{fight}
+	\begin{fight}{PSICOM Rangers \& Uhlans}
+		\item [2] \com/\syn: \textbf{Auto-battle} one Blitz \to \textbf{Ruin}
+		\item [4] \rav/\rav: \textbf{Auto-chain}\to \textbf{Summon}\to \textbf{Auto-chain}
+		\item [5] \rav/\rav: \textbf{Auto-chain} the other Uhlan\to \textbf{Auto-chain}
+		\item [4] \rav/\rav: \textbf{Water x4} |\com-buffer
+		\item [1] \com/\rav: \textbf{Blitz x2}\to Refresh with [2] |\skip|Save prompt|\skips{2}
+	\end{fight}
+	\begin{menu}
+		\item Paradigms
+		\begin{tabular}{ccl}
+			\com       & \rav   &             \\
+			\syn       & \sab   & --- default \\
+			\com       & (\sab) &             \\
+			\rav       & \rav   &             \\
+			{[}\rav{]} & (\sab) &             \\
+			{[}\com{]} & \rav   &            
+		\end{tabular}
+		\item Equipment: Sazh: Optimize Balanced
+	\end{menu}
+	\begin{mainlist}
+		\item Examine machine|\skip|Grab \textbf{Auric Amulet}|Grab \textbf{Phoenix Down}
+		\item \shortfight{Bomb \& Pulsework Soldier} \textbf{Bravery} Sazh\to [3] \textbf{Attack x3} Bomb\to [1] \textbf{Repeat} |\skip
+		\item \shortfight{Pulsework Soldiers} \textbf{Bravery} Sazh\to [3] \textbf{Auto-battle} B\to \textbf{Auto-battle}\to [1] \textbf{Auto-battle} |\skip
+		\item \shortfight{Bomb \& Pulsework Soldier} \textbf{Bravery} Sazh\to [1] \textbf{Auto-battle} Soldier\to [5] \textbf{Auto-chain} to stagger\to [3] \textbf{Auto-battle} after Deprotect\to [1] \textbf{Auto-battle} |\skip
+		\item \shortfight{Bombs} \textbf{Auto-support}\to [1] \textbf{Auto-battle} |\skips{2}
+	\end{mainlist}
+	\begin{menu}
+		\item Equipment
+		\begin{itemize}
+			\item Sazh: Remove \textbf{Power Wristband}
+			\item Vanille: Remove \textbf{Magician's Mark}
+		\end{itemize}
+	\end{menu}
+	\begin{mainlist}
+		\item Grab \textbf{Fortisol}|Grab \textbf{300 gil}|\skip|Save prompt|\skips{4}|\skips{2}|Save prompt
+	\end{mainlist}
+	
+	\hrulefill
+	\section{Chapter 5}
+	
+	\begin{mainlist}
+		\item \skip
+	\end{mainlist}
+	\begin{menu}
+		\item Paradigms
+		\begin{tabular}{ccl}
+			\rav       & \com       & --- default \\
+			(\med)     & (\com)     &             \\
+			\syn       & (\rav)     &             \\
+			\rav       & \rav       &             \\
+			\rav       & {[}\rav{]} &             \\
+			{[}\rav{]} & \com       &            
+		\end{tabular}
+		\item Crystarium
+		\begin{itemize}
+			\item Hope: [\rav: \textbf{Water}]
+			\item Lightning: [\com: Backtrack to \textbf{Lifesiphon} OOR]|[\rav: \textbf{Aquastrike}]
+		\end{itemize}
+		\item Equipment: Lightning: Optimize Balanced
+	\end{menu}
+	\begin{mainlist}
+		\item \skip|\skip|\skip|\skip
+	\end{mainlist}
+	\begin{fight}{Silver Lobos}
+		\item [1] \rav/\com: \textbf{Libra}\to \textbf{Auto-chain} two Fires |Cancel Lightning
+		\item [4] \rav/\rav: \textbf{Auto-chain}
+		\item [6] \rav/\com: \textbf{Fira-Fire} |Cancel Lightning
+		\item [1] \rav/\com: \textbf{Auto-chain}
+		\item [4] \rav/\rav: \textbf{Auto-chain} until stagger
+		\item [6] \rav/\com: \textbf{Repeat}
+	\end{fight}
+	\begin{mainlist}
+		\item Try to preempt
+		\item \shortfight{Crawlers} \textbf{Fira} when Lightning is about to attack
+		\item \textbf{Grab Water}|\skip
+	\end{mainlist}
+	\begin{fight}{Feral Behemoth}
+		\item [1] \rav/\com: \textbf{Libra}\to \textbf{Auto-chain} two Waters
+		\item [4] \rav/\rav: \textbf{Auto-chain} x2 |Cancel Lightning
+		\item [5] \rav/\rav: \textbf{Auto-chain} x2 |\com-buffer Lightning
+		\item [1] \rav/\com: \textbf{Auto-chain} |\skip
+	\end{fight}
+	\begin{mainlist}
+		\item \shortfight{Crawlers} \textbf{Fire-Fira} Crawler E\to [6] \textbf{Repeat}\to \textbf{\textbf{Potion}}\to \textbf{Repeat}\to [1] \textbf{Repeat}
+		\item \skips{3}|\skips{3}
+	\end{mainlist}
+	\begin{fight}{Feral Behemoth}
+		\item [1] \com/\rav: \textbf{Auto-battle}
+		\item [4] \rav/\rav: \textbf{Auto-chain}\to \textbf{Aquastrike x4}
+		\item [5] \rav/\rav: \textbf{Repeat} x2 |\com-buffer
+		\item [1] \com/\rav: \textbf{Auto-battle}
+	\end{fight}
+	\begin{mainlist}
+		\item \skip|Grab \textbf{Ethersol}
+	\end{mainlist}
+	\begin{fight}{Corps Marksmen \& Milvus Velocycle}
+		\item [1] \com/\rav: \textbf{Attack x4}
+		\item [3] \rav/\syn: \textbf{Auto-chain}\to \textbf{\textbf{Potion}}
+		\item [4] \rav/\rav: \textbf{Auto-chain}
+		\item [5] \rav/\rav: \textbf{Auto-chain} |\com-buffer
+		\item [1] \com/\rav: \textbf{Blitz}\to \textbf{Blitz x2}\to \textbf{Repeat}\to Refresh with [6] |Activate elevator
+	\end{fight}
+	\begin{menu}
+		\item Crystarium: Lightning: [\rav: \textbf{Fire}]|[\com: \textbf{Mag+6} OOR]
+		\item Equipment
+		\begin{itemize}
+			\item Hope: Equip \textbf{Magician's Mark}
+			\item Lightning: Equip \textbf{Doctor's Code}
+		\end{itemize}
+	\end{menu}
+	\begin{mainlist}
+		\item Use \textbf{Fortisol}|\skip
+	\end{mainlist}
+	\begin{fight}{Aster Protoflorian}
+		\item [1] \com/\rav: \textbf{Ruin x4}
+		\item [3] \rav/\syn: \textbf{Libra}\to \textbf{Fire-Thunder-Fire-Thunder}
+		\item [1] \com/\rav: \textbf{\textbf{Potion}}\to \textbf{Repeat}
+		\item [4] \rav/\rav: \textbf{Repeat} with \textbf{Potion}\to Refresh with [5]
+		\item \underline{Exoproofing: Fire}: \textbf{Water-Thunder-Water-Thunder} until 180\% then wait for next one with [2]
+		\item \underline{Exoproofing: Ice}: \textbf{Auto-chain}
+		\item \underline{Exoproofing: Lightning}: \textbf{Water x4}
+		\item \underline{Exoproofing: Water}: \textbf{Thunder x4}
+		\item \textbf{Summon}\to \textbf{Gestalt}\to \textbf{Zantetsuken} |\skip
+	\end{fight}
+	\begin{mainlist}
+		\item \skip|Save prompt|\skips{3}|Save prompt
+	\end{mainlist}
+	
+	\hrulefill
+	\section{Chatper 6}
+	\begin{mainlist}
+		\item \skip|Grab \textbf{Belladonna Wand}
+	\end{mainlist}
+	\begin{shop}{Creature Comforts}
+		\item \underline{Sell}: \textbf{Belladonna Wand} / \textbf{Auric Amulet} / Components except \textbf{Sturdy Bone} and \textbf{Turbojet} / \textbf{Phoenix Downs} until 22,560/21,480/20,360/19,160 gil
+		\item \underline{Buy}: 
+		\begin{itemize}
+			\item \textit{0 Turbojet}: \textbf{Sturdy Bone} x72 / \textbf{Polymer Emulsion} x84
+			\item \textit{1 Turbojet}: \textbf{Sturdy Bone} x76 / \textbf{Polymer Emulsion} x77
+			\item \textit{2 Turbojet}: \textbf{Sturdy Bone} x77 / \textbf{Polymer Emulsion} x71
+			\item \textit{3 Turbojet}: \textbf{Sturdy Bone} x72 / \textbf{Polymer Emulsion} x67
+		\end{itemize}
+	\end{shop}
+	\begin{upgrade}
+		\item \underline{Power Wristband}:
+		\begin{itemize}
+			\item \textit{0 Turbojet}: \textbf{Sturdy Bone} x36\to \textbf{Polymer Emulsion} x17
+			\item \textit{1 Turbojet}: \textbf{Sturdy Bone} x18\to \textbf{Sturdy Bone} x22\to \textbf{Turbojet} x1\to \textbf{Polymer Emulsion} x10
+			\item \textit{2 Turbojet}: \textbf{Sturdy Bone} x18\to \textbf{Sturdy Bone} x18\to \textbf{Sturdy Bone} x5\to \textbf{Polymer Emulsion} x4\to \textbf{Turbojet} x2
+			\item \textit{3 Turbojet}: \textbf{Sturdy Bone} x8\to \textbf{Sturdy Bone} x10\to \textbf{Sturdy Bone} x18\to \textbf{Turbojet} x3
+		\end{itemize}
+		\item \underline{Vega 42s}: \textbf{Sturdy Bone} x18\to \textbf{Sturdy Bone} x18\to \textbf{Polymer Emulsion} xMAX
+	\end{upgrade}
+	\begin{mainlist}
+		\item Grab \textbf{Doctor's Code}
+	\end{mainlist}
+	\begin{menu}
+		\item Paradigms
+		\begin{tabular}{ccl}
+			\rav       & \com   &             \\
+			(\sab)     & \com   &             \\
+			\sab       & \syn   & --- default \\
+			\rav       & \rav   &             \\
+			{[}\sab{]} & (\rav) &             \\
+			{[}\sab{]} & \com   &            
+		\end{tabular}
+		\item Crystarium
+		\begin{itemize}
+			\item Vanille: [\sab: \textbf{Poison}]|[\rav: \textbf{Fire} OOR]
+			\item Sazh: [\syn: \textbf{Enwater}]|[\rav: Next]
+		\end{itemize}
+		\item Equipment
+		\begin{itemize}
+			\item Vanille: Equip \textbf{Doctor's Code}
+			\item Sazh: Equip \textbf{Power Wristband}
+		\end{itemize}
+	\end{menu}
+	\begin{mainlist}
+		\item \skips{3}|\skip|\skips{3}|\skip|\skip
+	\end{mainlist}
+	\begin{fight}{Enki \& Enlil}
+		\item [3] \sab/\syn: \textbf{Librascope}\to \textbf{Deprotect-Poison-Deprotect}\to \textbf{Deprotect-Poison}\to \textbf{Potion}
+		\item [4] \rav/\rav: ([5] if missing debuff) \textbf{Auto-chain} until stagger
+		\item [2] \sab/\com: \textbf{Poison x3} after Sazh's third Attack\to \textbf{\textbf{Potion}} |Cancel Sazh
+		\item [6] \sab/\com: \textbf{Repeat} after third Attack
+		\item [3] \sab/\syn: \textbf{Deprotect-Poison-Deprotect} |Enwater on Sazh
+		\item [5] \sab/\rav: \textbf{Repeat} until two debuffs
+		\item [4] \rav/\rav: \textbf{Auto-chain} until stagger
+		\item [2] \sab/\com: \textbf{Poison x3} after third Attack\to Refresh with [6] |\skip
+	\end{fight}
+	\begin{menu}
+		\item Equipment
+		\begin{itemize}
+			\item Vanille: Remove
+			\item Sazh: Remove
+		\end{itemize}
+	\end{menu}
+	\begin{itemize}
+		\item \skip|Save prompt
+	\end{itemize}
+	
+	\hrulefill
+	\section{Chapter 7}
+	\begin{mainlist}
+		\item \skips{3}|\skip|\skip|\skip|Grab \textbf{Warding Talisman}|\skip|\skips{3}
+		\item \shortfight{Orion} \textbf{Up+O}\to \textbf{X}\to \textbf{Up+O} until 200\%\to \textbf{Triangle} |\skip|\skips{4}|\skips{2}
+		\item Grab \textbf{2 Incentive Chips}|Grab \textbf{Guardian Amulet}|\skip|\skips{2}|\skip
+		\item Grab \textbf{3 Thrust Bearings}|Grab \textbf{Vidofnir}
+	\end{mainlist}
+	\begin{shop}{Unicorn Mart}
+		\item \underline{Sell}: \textbf{Vidofnir} / \textbf{Riptide Ring}, \textbf{Fulmen Ring}, \textbf{Warding Talisman}, \textbf{Guardian Amulet} / \textbf{Incentive Chips}
+		\item \underline{Buy}: \textbf{\textbf{Potion}} x21 / \textbf{Turbojet} x17 / \textbf{Sturdy Bone} x72 / \textbf{Power Wristband} 
+	\end{shop}
+	\begin{upgrade}
+		\item \underline{Wild bear}: \textbf{Sturdy Bone} x36\to \textbf{Turbojet} x16
+		\item \underline{Magician's Mark}: \textbf{Sturdy Bone} x36\to \textbf{Thrust Bearing} x3\to \textbf{Turbojet} x1
+	\end{upgrade}
+	\begin{menu}
+		\item Paradigms
+		\begin{tabular}{ccl}
+			\com       & \rav & --- default \\
+			\com       & \med &             \\
+			\sen       & \med &             \\
+			\sen       & \syn &             \\
+			{[}\rav{]} & \rav &             \\
+			{[}\rav{]} & \rav &            
+		\end{tabular}
+		\item Crystarium: Snow: [\com: \textbf{Adrenaline} OOR\to \textbf{Str+10} before Role Level]
+		\item Equipment: Snow: Equip \textbf{Power Wristband Lv 1}
+	\end{menu}
+	\begin{mainlist}
+		\item \skip
+	\end{mainlist}
+	\begin{fight}{Ushumgal Subjugator (1)}
+		\item [1] \com/\rav: \textbf{Attack x4}
+		\item [2] \com/\med: \textbf{Repeat}
+		\item [1] \com/\rav: \textbf{Repeat}
+		\item [2] \com/\med: \textbf{Repeat}
+		\item [1] \com/\rav: \textbf{Summon} when Tail Hammer\to \textbf{Repeat}
+		\item [5] \rav/\rav: \textbf{Froststrike x4} after Overdrive\to \textbf{\textbf{Potion}} on Tail Hammer\to \textbf{Repeat}
+		\item [6] \rav/\rav: \textbf{Repeat}
+		\item [1] \com/\rav: \textbf{Repeat}\to Refresh with [2] |\skips{2}|Save prompt|\skips{3}
+	\end{fight}
+	\begin{mainlist}
+		\item \skip|\skips{2}|\skip
+		\item \shortfight{Ushumgal Subjugator (2)} Insta-shift \to [2] \textbf{Libra}\to [3] |\skip|Retry the fight
+	\end{mainlist}
+	\begin{menu}
+		\item Paradigms: Move [1] to [6]
+		\begin{tabular}{cccl}
+			{[}\com{]} & \com   & \rav   &             \\
+			\com       & \rav   & (\rav) &             \\
+			(\sab)     & (\rav) & \rav   &             \\
+			\sen       & (\rav) & (\rav) &             \\
+			\sab       & (\rav) & \syn   & --- default \\
+			\com       & \rav   & \rav   &            
+		\end{tabular}
+		\item Crystarium
+		\begin{itemize}
+			\item Fang: [\com: \textbf{Adrenaline}]|[\sab: \textbf{HP+20} before Acc OOR]
+			\item Lightning: [\rav: \textbf{Mag+10} OOR\to \textbf{Thundara}]
+			\item Hope: [\rav: \textbf{Fearsiphon} OOR\to \textbf{Thundara}]|[\syn: \textbf{Acc} OOR\to Next]
+		\end{itemize}
+		\item Equipment
+		\begin{itemize}
+			\item Fang: Equip \textbf{Power Wristband\star}
+			\item Hope: Magician's Mark\star\to \textbf{Silver Bangle}
+			\item Lightning: Equip \textbf{Magician's Mark\star}
+		\end{itemize}
+	\end{menu}
+	\begin{fight}{Ushumgal Subjugator (2)}
+		\item [5] \sab/\rav/\syn: \textbf{Slow x3}\to \textbf{Potion}\to \textbf{Repeat} |Third Protect
+		\item [3] \sab/\rav/\rav: \textbf{Repeat} x2\to \textbf{Potion}
+		\item [2] \com/\rav/\rav: \textbf{Potion}\to \textbf{Auto-battle} x2\to \textbf{Attack} |Lightning
+		\item [6] \com/\rav/\rav: \textbf{Auto-battle} x2 |Lightning
+		\item [2] \com/\rav/\rav: \textbf{Auto-battle}\to \textbf{Attack}\to \com-buffer Lightning
+		\item [1] \com/\com/\rav: \textbf{Auto-battle}\to \textbf{Smite}
+		\item [3] \sab/\rav/\rav: \textbf{Repeat} x2 |Lightning
+		\item [4] \sen/\rav/\rav: \textbf{Auto-defend}\to \textbf{Potion}\to \textbf{Provoke} or \textbf{Potion} until stagger
+		\item [2] \com/\rav/\rav: Same |\skip
+	\end{fight}
+	\begin{mainlist}
+		\item Grab \textbf{Phoenix Down}|\skips{2}|\skips{3}
+		\item \shortfight{Aerial Snipers \& Scavangers} \textbf{Blitz x2} Aerial Sniper B\to \textbf{Summon}\to \textbf{Blitz}\to \textbf{Repeat} other targets\to \textbf{Gestalt}\to \textbf{Thunderfall} until out\to \textbf{Zantetsuken}
+		\item \shortfight{Bombardier \& Predators} Target Bombardier\to [2] \textbf{Auto-chain}\to [1] \textbf{Blitz x2} until dead\to [2] \textbf{Auto-chain} |Grab \textbf{Brawler's Wristband} 
+	\end{mainlist}
+	\begin{menu}
+		\item Paradigms
+		\begin{tabular}{cccl}
+			\com   & \com   & \rav   &             \\
+			\rav   & \com   & \rav   &             \\
+			(\com) & (\com) & \rav   &             \\
+			(\com) & (\com) & (\med) &             \\
+			(\com) & (\com) & \syn   & --- default \\
+			(\com) & \com   & (\med) &            
+		\end{tabular}
+		\item Crystarium: Lightning: [\med: \textbf{Acc} OOR]|[\com: Three]
+		\item Equipment
+		\begin{itemize}
+			\item Lightning: Magician's Mark\star \to \textbf{Brawler's Wristband Lv 1}
+			\item Fang: Power Wristband\star \to \textbf{Magician's Mark\star}
+			\item Lightning: Equip \textbf{Power Wristband\star}
+		\end{itemize}
+	\end{menu}
+	\begin{mainlist}
+		\item Use \textbf{Fortisol}|\skips{2}
+	\end{mainlist}
+	\begin{fight}{Havoc Skytank}
+		\item [5] \com/\com/\syn: \textbf{Attack x4} Portside Turret\to \textbf{Attack x2}\to \textbf{Potion}\to \textbf{Repeat} x2
+		\item [4] \com/\com/\med: \textbf{Repeat}\to Refresh with [6]
+		\item [1]/[3]/[4]/[6]: \textbf{Repeat} until Main Cannon
+		\item [2] \rav/\com/\rav: \textbf{Auto-chain} until stagger
+		\item [1] \com/\com/\rav: \textbf{Repeat} until victory |\skip|Save prompt
+	\end{fight}
+	
+	\hrulefill
+	\section{Chapter 8}
+	
+	\begin{mainlist}
+		\item \skip|\skip|\skips{3}|\skip|\skip|\skip|\skip|\skip|\skip|\skip|\skip|Grab \textbf{Star Pendant}
+	\end{mainlist}
+	\begin{menu}
+		\item Paradigms
+		\begin{tabular}{ccl}
+			\com & \rav   & --- default \\
+			\com & (\med) &             \\
+			\syn & \sab   &             \\
+			\rav & \rav   &             \\
+			\rav & \sab   &             \\
+			\com & \sab   &            
+		\end{tabular}
+		\item Crystarium
+		\begin{itemize}
+			\item Sazh: [\com: \textbf{Blitz}]|[\syn: \textbf{Acc} OOR\to \textbf{Enfrost}]|[\rav: Two]
+			\item Vanille: [\rav: All OOR \to \textbf{Role Lv 2}]|[\sab: \textbf{Quake} OOR\to \textbf{Role Lv 2}]|[\med: Until out]
+		\end{itemize}
+		\item Equipment
+		\begin{itemize}
+			\item Sazh: Equip \textbf{Doctor's Code, Shield Talisman}
+			\item Vanille: Equip \textbf{Tungsten Bangle}
+		\end{itemize}
+	\end{menu}
+	\begin{mainlist}
+		\item \skip
+		\item \shortfight{Zwerg Metrodroid} \textbf{Attack}\to \textbf{Blitz} |Grab \textbf{Spica Defenders}|\skip
+	\end{mainlist}
+	\begin{fight}{Midlight Reaper}
+		\item [1] \com/\rav: \textbf{Blitz}
+		\item [3] \syn/\sab: \textbf{Bravery}\to \textbf{Enfrost}
+		\item [6] \com/\sab: \textbf{Repeat} |Vanille
+		\item [5] \rav/\sab: \textbf{Auto-chain}\to Refresh with [6] until Deprotect
+		\item [1] \com/\rav: \textbf{Repeat}
+		\item [6] \com/\sab: \textbf{Potion}\to \textbf{Repeat}
+		\item [1] \com/\rav: \textbf{Repeat}\to Refresh with [2] |\skips{2}
+	\end{fight}
+	\begin{mainlist}
+		\item \skip
+	\end{mainlist}
+	\begin{fight}{Brynhildr}
+		\item [1] \com/\rav: Immediate shift
+		\item [3] \syn/\sab: \textbf{Enfrost} Sazh
+		\item [1] \com/\rav: \textbf{Attack-Blitz}
+		\item [2] \com/\med: \textbf{Repeat}\to Refresh with [1] |\skips{2}|Save prompt
+	\end{fight}
+	
+	\hrulefill
+	\section{Chapter 9}
+	
+	\begin{mainlist}
+		\item \skips{2}|\skips{5}
+		\item \shortfight{PSICOM Raiders \& Infiltrator} \textbf{Summon}\to \textbf{Thundara x2} Infiltrator\to [2] \textbf{Blitz x2}\to \textbf{Gestalt}\to \textbf{Thunderfall} to stagger\to \textbf{Zantetsuken} |\skip
+	\end{mainlist}
+	\begin{menu}
+		\item Paradigms: Move [1] to [4]
+		\begin{tabular}{cccl}
+			(\rav)     & \syn   & \sab   &             \\
+			(\rav)     & \rav   & (\sab) &             \\
+			(\rav)     & (\rav) & \sen   &             \\
+			\rav       & \rav   & \com   & --- default \\
+			{[}\com{]} & \rav   & \com   &             \\
+			{[}\com{]} & \rav   & \com   &            
+		\end{tabular}
+		\item Crystarium
+		\begin{itemize}
+			\item Lightning: [\com: All OOR except \textbf{Ravage}\to \textbf{Smite}]
+			\item Fang: [\sab: \textbf{Acc} OOR\to Curse]|[\sen: Next]
+		\end{itemize}
+		\item Equipment
+		\begin{itemize}
+			\item Lightning: Remove all
+			\item Snow: Remove all
+			\item Fang: Equip \textbf{Power Wristband\star}, \textbf{Brawler's Wristband}
+			\item Lightning: Equip \textbf{Magician's Mark\star}, \textbf{Doctor's Code}
+		\end{itemize}
+	\end{menu}
+	\begin{fight}{PSICOM Raider \& Infiltrators}
+		\item [4] \rav/\rav/\com: \textbf{Fire-Thunder-Fire-Thunder} Infiltrator A\to \textbf{Potion}\to \textbf{Repeat} Infiltrator B
+		\item [5] \com/\rav/\com: \textbf{Ruin x4}\to \textbf{Repeat} until Infiltrators are dead
+		\item [4] \rav/\rav/\com: \textbf{Repeat}\to\textbf{Thundera x2} after stagger
+		\item [5] \com/\rav/\com: \textbf{Repeat} |\skip
+	\end{fight}
+	\begin{mainlist}
+		\item \skip|\skip|\skips{5}
+		\item Grab \textbf{Lifesaber}|Grab \textbf{Ember Ring}|Grab \textbf{Pandoran Spear}|\skips{2}
+	\end{mainlist}
+	\begin{menu}
+		\item Paradigms: Move [1] to [3]
+		\begin{tabular}{ccl}
+			\syn       & \sab   & --- default \\
+			\com       & \med   &             \\
+			\com       & \rav   &             \\
+			\rav       & \rav   &             \\
+			{[}\rav{]} & (\sab) &             \\
+			{[}\com{]} & (\sab) &            
+		\end{tabular}
+		\item Crystarium: Sazh: [\syn: Next]|[\rav: \textbf{Aero} OOR\to \textbf{Overwhelm} OOR]
+		\item Equipment: Sazh: Doctor's Code \to \textbf{Power Wristband Lv 1}
+	\end{menu}
+	\begin{fight}{Flanborg \& Flanitor (Preempt)}
+		\item \textit{If preemptive strike}
+		\begin{itemize}
+			\item [1] \syn/\sab: \textbf{Bravery-Enwater} Sazh |Vanilla starts casting
+			\item [3] \com/\sab: \textbf{Blitz x2}\to \textbf{Repeat} one Blitz
+		\end{itemize}
+		\item \textit{If not preemptive strike}
+		\begin{itemize}
+			\item [1] \syn/\sab: \textbf{Vigilance-Haste} Sazh\to \textbf{Bravery-Enwater} Sazh
+			\item [6] \com/\sab: \textbf{Blitz-Blitz}\to \textbf{Repeat}
+			\item [3] \com/\rav: \textbf{Repeat}
+		\end{itemize}
+	\end{fight}
+	\begin{mainlist}
+		\item \skips{2}
+	\end{mainlist}
+	\begin{shop}{Lenora's Garage}
+		\item \underline{Sell}: \textbf{Weapons} / \textbf{Star Pendant}, \textbf{Ember Ring}) / All components except \textbf{Abominable Wings}, \textbf{Superconductors}, \textbf{Uraninite}, \textbf{Vibrant Oozes}
+		\item \underline{Buy}: \textbf{Crankshaft} x32 / \textbf{Vibrant Ooze} x35 (x25 if bonus Fortisol) // \textbf{Shaman's Mark} / \textbf{Potion} x31, \textbf{Painkiller} x4, \textbf{Mallet} x4
+	\end{shop}
+	\begin{upgrade}
+		\item \underline{Brawler's Wristband}: \textbf{Vibrant Ooze} x25\to \textbf{Abominable Wing} x9\to \textbf{Crankshaft} x32\to \textbf{Uraninite}
+		\item \textit{If no bonus Fortisol}
+		\begin{itemize}
+			\item \underline{Doctor's Code (\textbf{unequipped})}: \textbf{Vibrant Ooze} x10
+			\item Dismantle \textbf{Doctor's Code\star}
+		\end{itemize}
+	\end{upgrade}
+	\begin{mainlist}
+		\item \skips{2}|Grab \textbf{Phoenix Down}|\skip
+	\end{mainlist}
+	\begin{fight}{Vespid Soldier \& Thermadon}
+		\item [1] \syn/\sab: \textbf{Bravery-Enthunder} Sazh
+		\item [2] \com/\rav: \textbf{Blitz x2} Vespid\to \textbf{Repeat} one Blitz if needed
+		\item [1] \syn/\sab: \textbf{Haste-Enwater} Sazh\to \textbf{Auto-support} Vanille
+		\item [5] \rav/\sab: \textbf{Fire-Aero-Fire-Aero}\to \textbf{Repeat} until Deprotect
+		\item [4] \rav/\rav: \textbf{Repeat} until stagger
+		\item [2] \com/\med: \textbf{Repeat} when Thermadon is close
+		\item [3] \com/\rav: \textbf{Repeat} |\skips{2}
+	\end{fight}
+	\begin{mainlist}
+		\item \skip
+	\end{mainlist}
+	\begin{fight}{Kalavinka Strike (1)}
+		\item [1] \rav/\rav/\com: \textbf{Libra}\to \textbf{Auto-chain} |Cancel Hope's second Protect
+		\item [2] \rav/\rav/\sab: \textbf{Auto-chain} until Slow and Curse
+		\item [4] \rav/\rav/\com: \textbf{Auto-chain} until stagger |\com-buffer
+		\item [5] \com/\rav/\com: \textbf{Auto-battle}\to Refresh with [6] |\skip
+	\end{fight}
+	\begin{fight}{Kalavinka Striker (2)}
+		\item [1] \rav/\rav/\com: \textbf{Potion}\to \textbf{Auto-chain}\to \textbf{Potion}\to \textbf{Auto-chain}
+		\item [2] \rav/\rav/\sab: \textbf{Auto-chain} x2 (and Potion)
+		\item [3] \rav/\rav/\sen: \textbf{Auto-chain} until Hellstorm Bolt\to \textbf{Potion} on Hellstorm Bolt
+		\item [4] \rav/\rav/\com ([2] if missing debuff): \textbf{Auto-chain} x2 (maintain interruption)\to \com-buffer last spell
+		\item [5] \com/\rav/\com: \textbf{Auto-battle} until stagger (maintain interruption)
+		\item [6] \com/\rav/\com: \textbf{Auto-battle} |\skips{3}
+	\end{fight}
+	\begin{menu}
+		\item Battle Team: Lightning/\textbf{Sazh}/\textbf{Snow} (2\to 5, 4\to 3)
+		\item Paradigms
+		\begin{tabular}{cccl}
+			\com       & \syn       & (\com) & --- default \\
+			(\rav)     & \rav       & \rav   &             \\
+			(\com)     & \syn       & \sen   &             \\
+			{[}\rav{]} & (\rav)     & (\rav) &             \\
+			\com       & {[}\com{]} & \com   &             \\
+			\com       & {[}\com{]} & \com   &            
+		\end{tabular}
+		\item Crystarium
+		\begin{itemize}
+			\item Lightning: [\com: \textbf{Quake} OOR]
+			\item Snow: [\com: \textbf{Role Lv2}]|[\sen: Backtrack \textbf{Fringeward}\to Next]|[\rav: All OOR\to \textbf{Role Lv2}\to Three]
+		\end{itemize}
+		\item Equipment
+		\begin{itemize}
+			\item Fang: Remove all
+			\item Lightning: Magician's Mark \to \textbf{Warrior's Wristband}
+			\item Sazh: Equip \textbf{Magician's Mark}, \textbf{Shaman's Mark}
+			\item Snow: \textbf{Power Wristband\star}
+		\end{itemize}
+	\end{menu}
+	\begin{fight}{PSICOM Infiltrators \& PSICOM Destroyer}
+		\item [1] \com/\syn/\com: \textbf{Potion}\to \textbf{Blitz-Blitz} PSICOM Destroyer
+		\item [4] \rav/\rav/\rav: \textbf{Potion}\to \textbf{Thundara-Thundara}
+		\item [5] \com/\com/\com: \textbf{Repeat}\to Refresh with [6]
+	\end{fight}
+	\begin{mainlist}
+		\item Grab \textbf{Librascope}
+	\end{mainlist}
+	\begin{fight}{PSICOM Dragoons \& PSICOM Destroyer}
+		\item [1] \com/\syn/\com: Insta shift
+		\item [3] \com/\syn/\sen: \textbf{Blitz x2} Destroyer\to \textbf{Repeat} until Snow has Vigilance and Bravery
+		\item [5] \com/\com/\com: \textbf{Blitz x2} or \textbf{Attack x4}
+	\end{fight}
+	\begin{mainlist}
+		\item Grab \textbf{3600 gil}
+	\end{mainlist}
+	\begin{fight}{Thermadon \& PSICOM Raiders}
+		\item [1] \com/\syn/\com: \textbf{Quake}\to \textbf{Blitz x2}\to \textbf{Repeat} one Blitz
+		\item [2] \rav/\rav/\rav: \textbf{Thundara x2} Raider A\to Target Raider B\to \textbf{Potion} on Photon Burst\to \textbf{Repeat} to stagger Raiders
+		\item [4] \rav/\rav/\rav: \textbf{Repeat} until Thermadon is staggered
+		\item [1] \com/\syn/\com: \textbf{Auto-battle} Thermadon |Everyone has Enwater
+		\item [6] \com/\com/\com: \textbf{Auto-battle}
+	\end{fight}
+	\begin{fight}{PSICOM Reaver \& PSICOM Dragoons}
+		\item [1] \com/\syn/\com: Insta shift
+		\item [3] \com/\syn/\sen: \textbf{Blitz x2} Dragoon A\to \textbf{Potion}\to \textbf{Repeat} with \textbf{Potion}
+		\item [4] \rav/\rav/\rav: \textbf{Sparkstrike-Aquastrike-Sparkstrike-Aquastrike}\to \textbf{Repeat} until stagger
+		\item [5] \com/\com/\com: \textbf{Auto-battle}
+	\end{fight}
+	\begin{menu}
+		\item Crystarium
+		\begin{itemize}
+			\item Sazh: [\syn: \textbf{Enfire}] [\com: \textbf{Quake} OOR\to \textbf{HP+10} end of ring]
+			\item Snow: [\rav: \textbf{Overwhelm} OOR]
+			\item Fang: [\com: Backtrack \textbf{HP+20} OOR\to Next] [\sab: Backtrack \textbf{HP+30} OOR\to Next]
+			\item Vanille: [\sab: \textbf{Acc} OOR] [\med: Until out]
+		\end{itemize}
+	\end{menu}
+	\begin{mainlist}
+		\item Grab \textbf{Ethersol}|Use \textbf{Fortisol}|\skip
+	\end{mainlist}
+	\begin{fight}{Barthandelus 1}
+		\item [1] \com/\syn/\com: Target Right Pauldron\to \textbf{Librascope}\to \textbf{Attack x3}\to \textbf{Attack x3}\to \textbf{Attack x4}
+		\item [6] \com/\com/\com: \textbf{Attack x3}\to \textbf{Potion}\to \textbf{Attacks x3}\to \textbf{Potion}\to \textbf{Attacks x4}
+		\item [5] \com/\com/\com: \textbf{Attack x3} until Right Pauldron dies
+		\item [1] \com/\syn/\com: \textbf{Potion}\to \textbf{Attack x3}\to \textbf{Potion}\to \textbf{Attack x3} until Ailette is dead\to \textbf{Attack x3} Left Pauldron until dead\to \textbf{Potion}
+		\item [2] \rav/\rav/\rav: \textbf{Fire-Thunder-Fire-Thunder}\to \textbf{Quake}\to \textbf{Repeat}\to \textbf{Potion}\to \textbf{Repeat}
+		\item [4] \rav/\rav/\rav: \textbf{Thundara x2}\to \textbf{Potion}\to \textbf{Repeat} until 650-700\%
+		\item [5] \com/\com/\com: \textbf{Repeat} after Snow's 4th Attack\to Refresh with [6]
+		\item If Destrudo
+		\begin{itemize}
+			\item [4] \rav/\rav/\rav: \textbf{Fire-Thunder-Fire-Thunder} and \textbf{Potion} until stagger
+			\item [5] \com/\com/\com: \textbf{Repeat} until victory
+		\end{itemize} 
+		\item |\skips{2}|Save prompt
+	\end{fight}
+	
+	\hrulefill
+	\section{Chapter 10}
+	\begin{mainlist}
+		\item \skip|\skip
+	\end{mainlist}
+	\begin{menu}
+		\item Battle Team: Lightning/Snow/\textbf{Sazh} (3\to 5)
+		\item Paradigms
+		\begin{tabular}{cccl}
+			(\rav)     & \sen   & \syn       & --- default \\
+			(\rav)     & \rav   & \rav       &             \\
+			(\rav)     & \sen   & (\rav)     &             \\
+			{[}\rav{]} & (\sen) & (\rav)     &             \\
+			{[}\rav{]} & (\rav) & \syn       &             \\
+			\com       & \com   & {[}\rav{]} &            
+		\end{tabular}
+	\end{menu}
+	\begin{mainlist}
+		\item \skip
+	\end{mainlist}
+	\begin{fight}{Pulsework Knights}
+		\item [1] \rav/\sen/\syn: \textbf{Quake}\to \textbf{Thundera} x3
+		\item [3] \rav/\sen/\rav: \textbf{Repeat}\to \textbf{Repeat} one Thundara\to  \textbf{Libra} different target\to \textbf{Repeat}
+		\item [4] \rav/\sen/\rav: \textbf{Repeat}\to Target non-staggered one
+		\item [5] \rav/\rav/\syn: \textbf{Repeat} to stagger |
+		\item [6] \com/\com/\rav: \textbf{Blitz x2}\to \textbf{Auto-battle} |\skip
+	\end{fight}
+	\begin{mainlist}
+		\item \skip|Grab \textbf{Alicanto}|Grab \textbf{Ethersol}|\skips{3}
+	\end{mainlist}
+	\begin{fight}{Cid Raines}
+		\item [1] \rav/\sen/\syn: \textbf{Quake}\to \textbf{Fire-Water-Fire-Water}
+		\item [3] \rav/\sen/\rav: \textbf{Repeat}\to \textbf{Potion}\to \textbf{Repeat}
+		\item [4] \rav/\sen/\rav: \textbf{Repeat}\to \textbf{Potion}
+		\item [5] \rav/\rav/\syn: \textbf{Repeat}\to \textbf{Repeat} two spells
+		\item [2] \rav/\rav/\rav: \textbf{Repeat} x3 |Offensive Shift
+		\item [3] \rav/\sen/\rav: \textbf{Repeat}\to \textbf{Potion}\to \textbf{Repeat} until stagger
+		\item Offensive or Recovery: [6] \textbf{Attack x4}\to keep juggling
+		\item Defensive Stance:
+		\begin{itemize}
+			\item [2] \rav/\rav/\rav: \textbf{Thundara x2} until 900\%\to wait for Offensive Shift
+			\item [6] \com/\com/\rav: \textbf{Attack x4}\to Keep juggling |\skip
+		\end{itemize}
+	\end{fight}
+	\begin{menu}
+		\item Equipment
+		\begin{itemize}
+			\item Lightning: Remove all
+			\item Snow: Power Wristband\star \to \textbf{Power Wristband Lv1}
+			\item Sazh: Equip \textbf{Power Wristband\star}, \textbf{Warrior's Wristband}
+			\item Lightning: Equip \textbf{Magician's Mark}, \textbf{Shaman's Mark}
+			\item Fang: Equip \textbf{Doctor's Code}, \textbf{Tetradic Crown}
+			\item Vanille: Equip \textbf{Shield Talisman}, \textbf{Soulfont Talisman}
+			\item Hope: Equip \textbf{Tungsten Bangle} 
+		\end{itemize}
+	\end{menu}
+	\begin{mainlist}
+		\item \skip|Grab \textbf{Feymark}|\skip|\skips{3}
+	\end{mainlist}
+	\begin{fight}{Bahamut}
+		\item [1] \com/\rav/\rav: Insta shift
+		\item [5] \sab/\com/\rav: \textbf{Auto-hinder}
+		\item [4] \sen/\med/\med: \textbf{Potion}\to \textbf{Auto-cover}
+		\item [1] \com/\rav/\rav ([5] if missing debuff): \textbf{Attack-Ruin-Attack} |\skip|\skips{3}|Save prompt
+	\end{fight}
+	
+	\hrulefill
+	\section{Chapter 11}
+	
+	\begin{mainlist}
+		\item \skips{4}|\skips{2}
+	\end{mainlist}
+	\begin{fight}{Alexander}
+		\item [1] \rav/\med/\sen: Insta shift
+		\item [6] \rav/\rav/\com: |Fang is close to Alexander
+		\item [1] \rav/\med/\sen: |Provoke
+		\item [2] \syn/\med/\sen: \textbf{Protect} Hope
+		\item [6] \rav/\rav/\com: \textbf{Thunder-Fire-Thunder}
+		\item [1] \rav/\med/\sen: |Provoke
+		\item [2] \syn/\med/\sen: \textbf{Repeat} Lightning\to \textbf{Repeat} Fang
+		\item [6] \rav/\rav/\com: \textbf{Repeat} x2|\skips{3}
+	\end{fight}
+	\begin{menu}
+		\item Battle Team: \textbf{Sazh}/\textbf{Vanille}/\textbf{Snow} (1\to 4, 5\to 3, 2\to 6)
+		\item Paradigms
+		\begin{tabular}{cccl}
+			\com       & \med       & (\com) &             \\
+			\com       & (\sab)     & \rav   &             \\
+			\syn       & \med       & (\com) &             \\
+			{[}\com{]} & (\sab)     & \com   &             \\
+			\syn       & {[}\sab{]} & \com   & --- default \\
+			{[}\com{]} & \rav       & \com   &            
+		\end{tabular}
+	\end{menu}
+	\begin{fight}{Behemoth King \& Megistotherian}
+		\item [5] \syn/\sab/\com: \textbf{Bravery-Enfire} Sazh |Vanille starts casting
+		\item [2] \com/\sab/\rav: \textbf{Blitz x2} Megistotherian\to \textbf{Repeat} one Blitz
+		\item [4] \com/\sab/\com: \textbf{Repeat} after Imperil
+	\end{fight}
+	\begin{mainlist}
+		\item \skip|\skip|Grab \textbf{Hauteclaire}|\skip
+	\end{mainlist}
+	\begin{shop}{Lenora's Garage}
+		\item \underline{Sell}: Weapons / \textbf{Entite Ring}, \textbf{Blessed Talisman} / All components except \textbf{Barbed Tail}, \textbf{Superconductor}
+		\item \underline{Buy}: \textbf{Superconductor} x78 / \textbf{Barbed Tail} x87 / \textbf{Titanium Bangle}, \textbf{Warrior's Wristband} x2, \textbf{Black Belt} / Pearlwing Staff / Holy Water x4, Foul Liquid x4
+	\end{shop}
+	\begin{upgrade}
+		\item \underline{Warrior's Wristband Lv1}: \textbf{Barbed Tail} x36\to \textbf{Superconductor} x37
+		\item \underline{Warrior's Wristband Lv1}: \textbf{Barbed Tail} x36\to \textbf{Superconductor} x37
+		\item \underline{Black Belt}: \textbf{Barbed Tail} x15\to \textbf{Superconductor} x4
+	\end{upgrade}
+	\begin{menu}
+		\item Paradigms: Move [1] to [2]
+		\begin{tabular}{cccl}
+			(\syn) & \sab & \rav &             \\
+			\com   & \med & \com &             \\
+			\syn   & \med & \com & --- default \\
+			\com   & \sab & \com &             \\
+			\syn   & \sab & \com &             \\
+			\com   & \rav & \com &            
+		\end{tabular}
+		\item Crystarium
+		\begin{itemize}
+			\item Sazh: [\com: \textbf{Jeopardize} OOR\to \textbf{Role Lv3}\to Two] [\rav: Finish current ring]
+			\item Vanille: [\med: Until out]
+			\item Snow: [\rav: \textbf{Str+5} after double HP+80] [\sen: \textbf{Acc} OOR\to \textbf{Role Lv2}\to \textbf{Challenge} OOR]
+		\end{itemize}
+		\item Equipment
+		\begin{itemize}
+			\item Lightning: Remove all
+			\item Hope: Remove all
+			\item Fang: Equip \textbf{Tungsten Bangle}, \textbf{Black Belt}
+			\item Snow: \textbf{Warrior's Wristband\star} x2
+			\item Vanille: Equip \textbf{Pearlwing Staff}, \textbf{Titanium Bangle}, \textbf{Doctor's Code}
+			\item Sazh: \textbf{Power Wristband}\to \textbf{Shield Talisman}
+		\end{itemize}
+	\end{menu}
+	\begin{fight}{Rust Puddings}
+		\item [3] \syn/\med/\com: \textbf{Enthunder-Bravery} Snow\to \textbf{Repeat} Sazh |Cancel Snow
+		\item [2] \com/\med/\com: \textbf{Blitz x2} closest Rust Pudding\to \textbf{Repeat}\to Refresh with [6]
+	\end{fight}
+	\begin{menu}
+		\item Crystarium
+		\begin{itemize}
+			\item Sazh: [\com: Next] [\rav: \textbf{Thunder}]
+			\item Vanille: [\med: Next] [\sab: Next]
+		\end{itemize}
+	\end{menu}
+	\begin{mainlist}
+		\item \skip|Grab \textbf{Saint's Amulet} x2|\skip
+	\end{mainlist}
+	\begin{fight}{Hecatoncheir}
+		\item [1] \com/\rav: Insta shift
+		\item [3] \sab/\com: \textbf{Deprotect-Deshell-Imperil-Deshell}\to \textbf{Repeat} |Fang's third action
+		\item [4] \sab/\sen: \textbf{Repeat} and \textbf{Potion} until Looming Wrath
+		\item [3] \sab/\com: \textbf{Repeat}\to \textbf{Potion}\to \textbf{Repeat} three spells
+		\item Switch to \textbf{Deprotect-Deshell-Deprotect-Deshell} when Imperil is inflicted |\skip
+	\end{fight}
+	\begin{mainlist}
+		\item Grab \textbf{Perfect Conductor x3}|\skip|\skips{2}|\skips{3}|\skips{2}|\skip|\skip|\skip
+		\item Elevator to Second Tier|\skip|Accept Mission 21
+	\end{mainlist}
+	\begin{fight}{Gelatitan}
+		\item [3] \syn/\med/\com: \textbf{Auto-support} Sazh\to \textbf{Bravery-Enthunder} Snow
+		\item [5] \syn/\sab/\com: \textbf{Repeat} Sazh |Cancel Snow
+		\item [6] \com/\rav/\com: \textbf{Blitz x2}\to \textbf{Repeat} |\skip
+	\end{fight}
+	\begin{menu}
+		\item Battle Team: \textbf{Vanille}/\textbf{Sazh}/Snow (1\to 2)
+		\item Paradigms: Default [6]
+	\end{menu}
+	\begin{mainlist}
+		\item Accept Mission 22
+		\item \shortfight{Ambling Bellows} Target Bellows\to \textbf{Summon}\to \textbf{Aerora}\to \textbf{Aerora-Fira}\to \textbf{Gestalt}\to \textbf{Force Blasters} x4\to \textbf{Finisher} |\skip
+	\end{mainlist}
+	\begin{menu}
+		\item Battle Team: \textbf{Sazh}/\textbf{Vanille}/Snow (1\to 2)
+		\item Paradigms: Default [1]
+	\end{menu}
+	\begin{mainlist}
+		\item Accept Mission 23
+	\end{mainlist}
+	\begin{fight}{Gurangatch}
+		\item [1] \textbf{Auto-support} Sazh\to \textbf{Bravery-Enwater} Snow
+		\item [5] \syn/\sab/\com: \textbf{Repeat} Sazh |Cancel Snow
+		\item [6] \com/\rav/\com: \textbf{Auto-battle} or \textbf{Blitz} |\skip
+	\end{fight}
+	\begin{mainlist}
+		\item \skip|Grab \textbf{Simurgh}|\skip|Elevator to Fourth Tier|Elevator to Fifth Tier|Accept Mission 24
+	\end{mainlist}
+	\begin{fight}{Mushussu}
+		\item [1] \syn/\sab/\rav: \textbf{Quake}\to \textbf{Bravery-Enwater} Snow
+		\item [5] \syn/\sab/\com: \textbf{Haste-Bravery} Sazh
+		\item [4] \com/\sab/\com: \textbf{Blitz x2} |Cancel Snow
+		\item [2] \com/\med/\com: \textbf{Repeat} |\skip
+	\end{fight}
+	\begin{menu}
+		\item Paradigms
+		\begin{tabular}{cccl}
+			\syn   & \sab & \rav   & --- default \\
+			\com   & \med & \com   &             \\
+			\syn   & \med & \com   &             \\
+			\com   & \sab & \com   &             \\
+			(\rav) & \sab & (\rav) &             \\
+			\com   & \rav & \com   &            
+		\end{tabular}
+		\item Crystarium
+		\begin{itemize}
+			\item Sazh: [\rav: \textbf{Role Lv2}\to Before Role Lv3]
+			\item Vanille: [\sab: \textbf{Jinx} OOR]
+			\item Snow: [\sen: Until out]
+		\end{itemize}
+		\item Equipment
+		\begin{itemize}
+			\item Sazh: Shield Talisman\to \textbf{Soulfont Talisman}
+			\item Fang: Remove all
+		\end{itemize}
+	\end{menu}
+	\begin{mainlist}
+		\item Elevator to Fourth Tier|Elevator to Sixth Tier|Accept Mission 25|Examine statue|\skip|Grab \textbf{Unsetting Sun}
+	\end{mainlist}
+	\begin{fight}{Vetala}
+		\item [1] \syn/\sab/\rav: \textbf{Auto-support} Sazh\to \textbf{Bravery-Enthunder} Snow
+		\item [5] \rav/\sab/\rav: \textbf{Renew}\to \textbf{Fire-Thunder-Fire-Thunder}\to \textbf{Repeat} until stagger
+		\item [1] \syn/\sab/\rav: \textbf{Repeat} Sazh |Deprotect
+		\item [2] \com/\med/\com: \textbf{Blitz x2}\to \textbf{Repeat} |\skip
+	\end{fight}
+	\begin{menu}
+		\item Paradigms
+		\begin{tabular}{cccl}
+			\syn & (\rav)   & (\sen) &             \\
+			\com & (\rav)   & (\rav) &             \\
+			(\rav) & (\rav) & (\sen) &             \\
+			\com & (\rav)   & \com   & --- default \\
+			\rav   & \sab   & (\sen) &             \\
+			\com   & \rav   & \com   &            
+		\end{tabular}
+		\item Battle Team: \textbf{Vanille}/\textbf{Sazh}/Snow (1\to 2)
+	\end{menu}
+	\begin{mainlist}
+		\item Grab \textbf{Librascope}|Accept Mission 26|Use \textbf{Ethersol}
+		\item \shortfight{Penannggalan} \textbf{Quake}\to Target Penanggalan\to \textbf{Summon}\to \textbf{Fira-Aerora}\to [6] \textbf{Repeat}\to \textbf{Gestalt}\to \textbf{Force Blasters} x5\to \textbf{Finisher} |\skip|\skip|Examine statue|\skip|Elevator to Fourth Tier
+	\end{mainlist}
+	\begin{shop}{Lenora's Garage}
+		\item \underline{Sell}: \textbf{Weapons} / All Acc but \textbf{Warrior's Wristband}, \textbf{Magician's Mark}, \textbf{Black Belt}, \textbf{Doctor's Code} / All Components but \textbf{Perfect Conductors}, \textbf{Particle Accelerators}
+		\item \underline{Buy}: \textbf{Superconductor} x63 / \textbf{Sturdy Bone} x72, \textbf{Barbed Tail} x72, \textbf{Vibrant Ooze} x86 (96 if two Doctor's Code) / \textbf{Warrior's Wristband}, \textbf{Sorcerer's Mark}
+	\end{shop}
+	\begin{menu}
+		\item Battle Team: \textbf{Sazh}/\textbf{Snow}/\textbf{Vanille} (1\to 2, 2\to 3)
+		\item Equipment
+		\begin{itemize}
+			\item Sazh: Soulfont Talisman \to \textbf{Warrior's Wristband Lv 1}
+			\item Vanille: Doctor's Code \to \textbf{Sorcerer's Mark}
+		\end{itemize}
+	\end{menu}
+	\begin{upgrade}
+		\item \underline{Vega 42s}: \textbf{Sturdy Bone} x36\to \textbf{Superconductor} x5
+		\item \underline{Wild Bear}: \textbf{Sturdy Bone} x36\to \textbf{Superconductor} x4
+		\item \underline{Pearlwing Staff}: \textbf{Barbed Tail} x36\to \textbf{Superconductor} x17
+		\item \underline{Warrior's Wristband Lv1}: \textbf{Barbed Tail} x36\to \textbf{Superconductor} x37
+		\item \underline{Warrior's Wristband Lv1}: \textbf{Vibrant Ooze} x36\to \textbf{Particle Accelerator} x3\to \textbf{Perfect Conductor} x1 
+		\item \underline{Doctor's Code}: \textbf{Vibrant Ooze} x10
+		\item Dismantle: \textbf{Doctor's Code}
+	\end{upgrade}
+	\begin{mainlist}
+		\item Elevator to Sixth Tier|Use \textbf{Ethersol}|Elevator to Apex|\skips{2}
+	\end{mainlist}
+	\begin{fight}{Dahaka}
+		\item [4] \com/\com/\rav: \textbf{Blitz} |\rav-buffer
+		\item [3] \rav/\sen/\rav: \textbf{Flamestrike x4}
+		\item [1] \syn/\sen/\rav: \textbf{Auto-support} Sazh\to \textbf{Renew}\to \textbf{Libra}\to \textbf{Auto-support} Vanille
+		\item [5] \rav/\sen/\sab: \textbf{Repeat}
+		\item [1] \syn/\sen/\rav: \textbf{Bravery-Enthunder} Sazh\to \textbf{Repeat} Snow (wait for Foul Utterance if it goes off)
+		\item [5] \rav/\sen/\sab: \textbf{Repeat}\to \textbf{Fire-Thunder-Fire-Thunder} |Imperil, Deprotect and 280\%
+		\item [2] \com/\rav/\rav: \textbf{Blitz x2}
+		\item [4] \com/\com/\rav: \textbf{Repeat}\to Refresh with [6] |\skips{2}
+	\end{fight}
+	\begin{mainlist}
+		\item Grab \textbf{Ethersol}
+	\end{mainlist}
+	\begin{menu}
+		\item Paradigms
+		\begin{tabular}{cccl}
+			(\com) & (\com) & (\med) &             \\
+			(\rav)   & \rav   & \rav   &             \\
+			\rav   & (\rav) & (\sab) &\\
+			\com   & \com   & \rav   & --- default              \\
+			(\syn) & (\rav) & \sab   &             \\
+			\com   & \com   & \rav   &            
+		\end{tabular}
+		\item Crystarium
+		\begin{itemize}
+			\item Sazh: [\rav: Until out]
+			\item Snow: [\sen: Until out]
+			\item Vanille: [\med: \textbf{HP+100 x2} OOR] [\sab: \textbf{HP+100 x2} OOR]
+		\end{itemize}
+	\end{menu}
+	\begin{mainlist}
+		\item \skips{2}|\skip|Grab \textbf{Ethersol}|Use \textbf{Aegisol} and \textbf{Ethersol}|\skip
+	\end{mainlist}
+	\begin{fight}{Barthandelus 2}
+		\item [4] \com/\com/\rav: \textbf{Blitz}
+		\item [5] \syn/\rav/\sab: \textbf{Haste-Bravery} Sazh\to \textbf{Haste-Faith} Vanille\to \textbf{Bravery} Snow
+		\item [3] \rav/\rav/\sab: \textbf{Fire-Thunder-Fire-Thunder}\to Librascope |Stagger or Deprotect and Imperil
+		\item [2] \rav/\rav/\rav: \textbf{Repeat} or \textbf{Thunder-Aerora} |After second Thunder-Aerora
+		\item [1] \com/\com/\med or [4/6] \com/\com/\rav: \textbf{Blitz x2}
+		\item Summon differently according to his HP
+		\begin{itemize}
+			\item \textbf{Summon}\to \textbf{Gestalt} on Apoptosis\to \textbf{Finisher}
+			\item \textbf{Summon} on Laughter\to \textbf{Potion}\to  \textbf{Repeat}\to \textbf{Gestalt} on Apoptosis\to \textbf{Finisher}\to \textbf{Blitz}
+		\end{itemize}
+		\item [5] \syn/\rav/\sab: \textbf{Haste} Sazh\to \textbf{Repeat} Vanille
+		\item [3] \rav/\rav/\sab: \textbf{Fire-Thunder-Fire-Thunder} or \textbf{Thunder-Aerora} until Deprotect, Imperil, and stagger
+		\item [2] \com/\rav/\rav: \textbf{Repeat} or \textbf{Thunder-Aerora} |Second Thundere-Aerora
+		\item [1] \com/\com/\med: \textbf{Repeat}\to Refresh with [6] and [4] |\skip|\skip|\skips{2}|Save prompt
+	\end{fight}
+	
+	\hrulefill
+	\section{Chapter 12}
+	\begin{mainlist}
+		\item \skips{2}
+		\item \shortfight{Anavatapta Warmech} \textbf{Down+O}\to \textbf{Side+O} until stagger\to (initial chain died) \textbf{Zantetsuken} or \textbf{Down+O}\to \textbf{Side+O} until dead |\skips{4}|\skips{2}|\skip
+	\end{mainlist}
+	\begin{menu}
+		\item Battle Team: \textbf{Vanille}/Snow/\textbf{Sazh} (1\to 3, 3\to 4)
+		\item Paradigms: Default [2]
+	\end{menu}
+	\begin{mainlist}
+		\item \shortfight{Bulwarker} \textbf{Quake}\to \textbf{Summon}\to \textbf{Fira-Aerora}\to \textbf{Gestalt}\to \textbf{Force Blasters}\to \textbf{Finisher}
+	\end{mainlist}
+	\begin{menu}
+		\item Crystarium
+		\begin{itemize}
+			\item Vanille: [\com: \textbf{Ruin}] [\med: \textbf{Acc} OOR] [\sab: Finish triple HP+100\to \textbf{HP+100}]
+			\item Snow: [\sen: \textbf{ATB}] [\rav: \textbf{Acc} OOR]
+			\item Sazh: [\rav: \textbf{HP+100} next to Cold Blood]
+		\end{itemize}
+		\item Battle Team: \textbf{Sazh}/Snow/\textbf{Vanille} (1\to 3)
+		\item Paradigms
+		\begin{tabular}{cccl}
+			\com       & (\com) & (\com)     &             \\
+			\com       & (\com) & (\com)     & --- default \\
+			\syn       & \sen   & (\sab)     &             \\
+			{[}\syn{]} & \rav   & (\med)     &             \\
+			\rav       & \rav   & {[}\med{]} &             \\
+			\rav       & \rav   & {[}\rav{]} &            
+		\end{tabular}
+		\item Equipment
+		\begin{itemize}
+			\item Snow: Equip \textbf{Warrior's Wristband\star}
+			\item Vanille: Equip \textbf{Magician's Mark}, \textbf{Black Belt}
+		\end{itemize}
+	\end{menu}
+	\begin{mainlist}
+		\item \skips{2}
+	\end{mainlist}
+	\begin{fight}{Behemoth King}
+		\item [2] \com/\com/\com: \textbf{Blitz} |\rav-buffer Blitz
+		\item [6] \rav/\rav/\rav: \textbf{Fire x4}
+		\item [1] \com/\com/\com: \textbf{Attack-Blitz} |\rav-buffer
+		\item [6] \rav/\rav/\rav: \textbf{Repeat}
+		\item [4] \syn/\rav/\med: \textbf{Auto-support} Sazh\to \textbf{Auto-support} Vanille
+		\item [5] \rav/\rav/\med: \textbf{Repeat}
+		\item [3] \syn/\sen/\sab: \textbf{Bravery-Enfire} Sazh\to \textbf{Repeat} Snow\to \textbf{Faith-Enfire} Vanille |Hurl, Deprotect and Imperil
+		\item [2] \com/\com/\com: \textbf{Blitz x2} |\skip
+	\end{fight}
+	\begin{menu}
+		\item Crystarium
+		\begin{itemize}
+			\item Sazh: [\rav: \textbf{Cold Blood} OOR]
+			\item Snow: [\com: Until out]
+		\end{itemize}
+	\end{menu}
+	\begin{mainlist}
+		\item Grab \textbf{Rabel Heart}|\skip
+	\end{mainlist}
+	\begin{fight}{The Proudclad 1}
+		\item [2] \com/\com/\com: \textbf{Blitz x2} |\rav-buffer first Blitz
+		\item [6] \rav/\rav/\rav: \textbf{Fire-Thunder-Fire-Thunder}
+		\item [4] \syn/\rav/\med: \textbf{Haste-Bravery} Snow\to \textbf{Repeat} Sazh\to \textbf{Haste-Faith} Vanille |Snow
+		\item [6] \rav/\rav/\rav: \textbf{Repeat} |Snow
+		\item [1] \com/\com/\com: \textbf{Repeat} |\rav-buffer
+		\item [5] \rav/\rav/\med: \textbf{Librascope}\to \textbf{Cold Blood} right before stagger |Sazh starts firing
+		\item [6] \rav/\rav/\rav: Insta shift
+		\item [5] \rav/\rav/\med: \textbf{Repeat}
+		\item [1] \com/\com/\com: |Snow's fifth Attack
+		\item [2] \com/\com/\com: \textbf{Repeat}\to \textbf{Renew}\to \textbf{Repeat}\to Refresh with [1] |\skip
+	\end{fight}
+	\begin{menu}
+		\item Battle Team: \textbf{Snow}/\textbf{Sazh}/Vanille (1\to 2)
+		\item Paradigms: Default [6]
+	\end{menu}
+	\begin{mainlist}
+		\item \skip
+		\item \shortfight{Adamanchelid} \textbf{Froststrike-Blizzard-Blizzard-Blizzard-Blizzard}\to \textbf{Summon}\to \textbf{Repeat}\to [5] \textbf{Repeat} until stagger\to \textbf{Gestalt}\to \textbf{Up+O}\to \textbf{Down+O} until out\to \textbf{Finisher} |\skip
+		\item Grab \textbf{Punisher}|\skip|\skip|\skip|Grab \textbf{Particle Accelerator x6}|\skip|\skip
+		\item Grab \textbf{Mistilteinn}|\skip|\skip|Grab \textbf{Power Glove}
+	\end{mainlist}
+	\begin{upgrade}
+		\item \underline{Goddess's Favour}: \textbf{Vibrant Ooze} x4\to \textbf{Perfect Conductor} x2
+		\item \underline{Power Glove Lv1}: \textbf{Vibrant Ooze} x36\to \textbf{Particle Accelerator} x6
+		\item Dismantle \textbf{Goddess's Favour}\to \textbf{Ribbon}
+		\item \underline{Warrior's Wristband} (on Snow): \textbf{Scarletite}
+	\end{upgrade}
+	\begin{menu}
+		\item Battle Team: \textbf{Sazh}/\textbf{Snow}/Vanille (1\to 2)
+		\item Paradigms
+		\begin{tabular}{cccl}
+			(\rav) & \com   & \com   &             \\
+			\com   & \com   & \com   & --- default \\
+			(\rav) & \sen   & (\rav) &             \\
+			(\com) & (\sen) & \med   &             \\
+			\rav   & (\com) & (\rav) &             \\
+			\rav   & \rav   & \rav   &            
+		\end{tabular}
+		\item Crystarium
+		\begin{itemize}
+			\item Sazh: [\com: Until out]
+			\item Snow: [\com: Until out]
+			\item Vanille: [\med: Until out]
+		\end{itemize}
+		\item Equipment
+		\begin{itemize}
+			\item Snow: Warrior's Wristband\star\to \textbf{Power Glove\star}
+			\item Sazh: Warrior's Wristband Lv 8\to \textbf{Warrior's Wristband\star}
+		\end{itemize}
+	\end{menu}
+	\begin{mainlist}
+		\item Use \textbf{Ethersol, Fortisol, Aegisol}|\skip
+	\end{mainlist}
+	\begin{fight}{The Proudclad 2}
+		\item [2] \com/\com/\com: \textbf{Attack-Blitz}\to \rav-buffer Blitz
+		\item [6] \rav/\rav/\rav: \textbf{Libra}\to \textbf{Cold Blood}\to shift before Cold Blood ends\to cancel Snow
+		\item [1] \rav/\com/\com: \textbf{Repeat}\to \textbf{Aero}
+		\item [2] \com/\com/\com: \textbf{Renew}\to \textbf{Auto-battle} 3 Attacks\to \textbf{Potion}\to \textbf{Repeat} until stagger ends\to \textbf{Attack-Attack-Blitz}\to \rav-buffer Blitz
+		\item [3] \rav/\sen/\rav: \textbf{Auto-chain} 2 spells\to ready Cold Blood
+		\begin{itemize}
+			\item (Onearic Maelstrom) \textbf{Renew} on hit\to \textbf{Cold Blood}\to shift when 2nd Steelguard text disappears
+			\item (Double Myon Blaster) \textbf{Cold Blood}\to shift when 2nd Steelguard text disappears
+		\end{itemize}
+		\item [5] \rav/\com/\rav: \textbf{Repeat}
+		\item [1] \rav/\com/\com: \textbf{Repeat}\to cancel Snow
+		\item [2] \com/\com/\com: \textbf{Blitz}\to \textbf{Blitz x2}\to \rav-buffer 2nd Blitz
+		\item [1] \rav/\com/\com: \textbf{Cold Blood} when stagger is about to end\to Immediate shift
+		\item [2] \com/\com/\com: \textbf{Repeat}
+		\item If he's not close to dead
+		\begin{itemize}
+			\item [4] \com/\sen/\med: \textbf{Potion}s until Aerial phase\to \textbf{Renew} if Onearic Maelstrom\to Shift after Aerial phase
+			\item [6] \rav/\rav/\rav: \textbf{Fire-Thunder-Fire-Thunder}
+			\item [4] \com/\sen/\med: \textbf{Repeat}\to \rav-buffer
+			\item [6] \rav/\rav/\rav: \textbf{Repeat}\to \textbf{Cold Blood}
+			\item [2] \com/\com/\com: \textbf{Repeat} |\skip|\skip|Save prompt
+		\end{itemize}
+	\end{fight}
+	
+	\hrulefill
+	\section{Chapter 13}
+	
+	\begin{shop}{Eden Pharmaceuticals}
+		\item \underline{Sell}: Weapons, All Acc except \textbf{Warrior's Wristband}, All components
+		\item \underline{Buy}: \textbf{Deceptisol} x1, \textbf{Fortisol} x3, \textbf{Aegisol} x3, \textbf{Deceptisol} x1-2
+	\end{shop}
+	\begin{menu}
+		\item Battle Team: \textbf{Vanille}/Snow/\textbf{Sazh} (1\to 3)
+		\item Paradigms
+		\begin{tabular}{cccl}
+			(\med) & \com   & (\com) &             \\
+			(\sab) & \com   & \com   &             \\
+			(\sab)   & \sen   & (\syn)   &             \\
+			(\rav) & (\rav) & \com   &             \\
+			(\sab) & (\rav) & \rav   & --- default \\
+			\rav   & \rav   & \rav   &            
+		\end{tabular}
+		\item Crystarium
+		\begin{itemize}
+			\item Vanille: [\med: \textbf{Mag+18} and \textbf{HP+125} OOR\to \textbf{Curaja} OOR\to Two nodes after Role Lv4]
+			\item Snow: [\com: \textbf{Role Lv4}]
+			\item Sazh: [\com: Both \textbf{HP+70} OOR\to \textbf{Adrenaline} OOR\to \textbf{Acc} OOR]
+		\end{itemize}
+		\item Equipment: Sazh: Equip \textbf{Warrior's Wristband Lv 8}
+	\end{menu}
+	\begin{mainlist}
+		\item \skip|\skip|Use \textbf{Ethersol} while jumping|\skip|Use \textbf{Fortisol, Aegisol}|\skip
+	\end{mainlist}
+	\begin{fight}{Bandersnatch \& Jabberwocky}
+		\item [5] \sab/\rav/\rav: \textbf{Imperil x5} Bandersnatch
+		\item [6] \rav/\rav/\rav: \textbf{Summon}\to \textbf{Fira-Aerora}\to \textbf{Gestalt} on Jabberwocky's action\to \textbf{Force Blasters}\to \textbf{Finisher}\to \textbf{Fire-Thunder-Fire-Thunder} |Cancel Snow
+		\item [5] \sab/\rav/\rav: \textbf{Deprotect-Poison-Deprotect-Poison-Deprotect}
+		\item [6] \rav/\rav/\rav: \textbf{Thunder-Aerora-Aero} (Tank Breath with [3])
+		\item [5] \sab/\rav/\rav: \textbf{Repeat} or \textbf{Poison x5}
+		\item [2] \sab/\com/\com: \textbf{Repeat} |\skip|\skip|\skip
+	\end{fight}
+	\begin{menu}
+		\item Paradigms
+		\begin{tabular}{cccl}
+			\med   & \com & \com   &             \\
+			\sab   & \com & \com   &             \\
+			\sab & \sen & \syn & --- default \\
+			\rav   & \rav & \com   &             \\
+			\sab   & \rav & \rav   &             \\
+			\rav   & \rav & \rav   &            
+		\end{tabular}
+	\end{menu}
+	\begin{mainlist}
+		\item Use \textbf{Ethersol, Fortisol, Aegisol}|\skip
+	\end{mainlist}
+	\begin{fight}{Wladislaus}
+		\item [3] \sab/\sen/\syn: \textbf{Libra}\to \textbf{Deprotect x5} |Third Enfire
+		\item [2] \sab/\com/\com: \textbf{Repeat} if missing Deprotect\to \textbf{Renew}\to \textbf{Repeat} when Mounting Contempt starts
+		\item [3] \sab/\sen/\syn: \textbf{Repeat} if missing Deprotect |Mounting Contempt hits
+		\item [1] \med/\com/\com: \textbf{Auto-heal}\to \textbf{Auto-heal} after Wladislaus attacks |Cancel Snow
+		\item [2] \sab/\com/\com: Kill |\skip|\skip
+	\end{fight}
+	\begin{menu}
+		\item Battle Team: \textbf{Sazh}/Snow/\textbf{Vanille} (1\to 3)
+		\item Paradigms
+		\begin{tabular}{cccl}
+			\com   & \com   & \med   &             \\
+			\com   & \com   & (\com) &             \\
+			(\rav) & (\rav) & (\med) &             \\
+			\com   & \rav   & \rav   & --- default \\
+			\rav   & \rav   & \sab   &             \\
+			\rav   & \rav   & \rav   &            
+		\end{tabular}
+		\item Crystarium
+		\begin{itemize}
+			\item Sazh: [\com: HP+70 OOR\to One after Role Lv3]
+			\item Snow: [\com: Until out]
+			\item Vanille: [\med: Until out]
+		\end{itemize}
+		\item Equipment
+		\begin{itemize}
+			\item Snow: Remove both \textbf{Power Gloves}
+			\item Sazh: Optimize Offensive
+			\item Snow: Optimize Offensive
+		\end{itemize}
+	\end{menu}
+	\begin{mainlist}
+		\item Use \textbf{Ethersol} on elevator
+		\item Use \textbf{Deceptisol, Fortisol, Aegisol}|\skip
+	\end{mainlist}
+	\begin{fight}{Tiamat Eliminator}
+		\item [4] \com/\rav/\rav: \textbf{Attack-Attack-Blitz} |\rav-buffer Blitz
+		\item [6] \rav/\rav/\rav: \textbf{Cold Blood}\to \textbf{Libra}\to \textbf{Repeat} right before stagger |Sazh starts firing
+		\item [3] \rav/\rav/\med: \textbf{Repeat} if missing Imperil, or low HP |Before Cold Blood ends
+		\item [2] \com/\com/\com: \textbf{Blitz x2}\to Refresh with [1] until stagger ends\to \textbf{Attack-Attack-Blitz} once hits ground
+		\item [5] \rav/\rav/\sab: \textbf{Repeat} until stagger |Deprotect
+		\item [2] \com/\com/\com: \textbf{Blitz x2}\to Keep juggling |\skip
+	\end{fight}
+	\begin{menu}
+		\item Paradigms
+		\begin{tabular}{cccl}
+			\com   & \com   & \med   &             \\
+			\com   & \com   & (\rav) & --- default \\
+			(\syn) & (\sen) & \med   &             \\
+			(\syn) & \rav   & \rav   &             \\
+			\rav   & \rav   & \sab   &             \\
+			\rav   & \rav   & \rav   &            
+		\end{tabular}
+		\item Crystarium
+		\begin{itemize}
+			\item Sazh: [\rav: Next two STR\to First \textbf{STR+20} OOR] [\syn: \textbf{Role Lv3}\to Four]
+		\end{itemize}
+	\end{menu}
+	\begin{mainlist}
+		\item \skip
+	\end{mainlist}
+	\begin{shop}{Eden Pharmaceuticals}
+		\item \underline{Sell}: \textbf{Imperial Armlet}
+		\item \underline{Buy}: \textbf{Librascope} x2, \textbf{Fortisol}, \textbf{Aegisol}
+	\end{shop}
+	\begin{mainlist}
+		\item Grab \textbf{Ethersol}|\skip|Use \textbf{Ethersol, Fortisol, Aegisol}|\skip
+	\end{mainlist}
+	\begin{fight}{Barthandelus 3}
+		\item [2] \com/\com/\rav: \textbf{Librascope}\to \textbf{Blitz x2}\to \rav-buffer
+		\item [5] \rav/\rav/\sab: \textbf{Fire-Thunder-Fire-Thunder}\to \textbf{Repeat}\to \textbf{Repeat} 2 spells
+		\item If missing Imperil
+		\begin{itemize}
+			\item [3] \syn/\sen/\med: \textbf{Potion} until Ultima finishes
+			\item [5] \rav/\rav/\sab: \textbf{Potion} until Imperil is inflicts
+			\item [1] \com/\com/\med: \textbf{Repeat} until close to Ultima
+			\item [3] \syn/\sen/\med: \textbf{Quake} on Ultima\to \textbf{Potion} until Ultima finishes
+		\end{itemize}
+		\item If not missing Imperil
+		\begin{itemize}
+			\item [3] \syn/\sen/\med: \textbf{Potion} or \textbf{Renew} when free\to \textbf{Quake} when Ultima starts
+		\end{itemize}
+		\item [6] \rav/\rav/\rav: (Use [5] if missing Deprotect) \textbf{Renew}\to \textbf{Cold Blood}\to Cancel Vanille
+		\item [2] \com/\com/\rav: \textbf{Repeat} x2
+		\item [1] \com/\com/\med: \textbf{Repeat} x2\to Cancel Snow
+		\item [2] \com/\com/\rav: \textbf{Repeat}\to hopefully kill
+		\item [3] \syn/\sen/\med: \textbf{Renew}
+		\item [1] \com/\com/\med: \textbf{Repeat} until dead |\skip
+	\end{fight}
+	\begin{fight}{Orphan 1}
+		\item [2] \com/\com/\rav: \textbf{Librascope}
+		\item [3] \syn/\sen/\med: (\underline{Judgment})\to \textbf{Auto-support} Vanille\to Haste-Vigilance Sazh\to (\underline{Slap})\to \textbf{Repeat} Snow
+		\item [6] \rav/\rav/\rav: \textbf{Fire-Thunder-Fire-Thunder}\to \textbf{Renew} on (\underline{Slap})\to \textbf{Repeat}
+		\item [4] \syn/\rav/\rav: \textbf{Bravery-Enthunder} Sazh\to \textbf{Renew} on (\underline{Slap})\to \textbf{Repeat} Snow
+		\item [3] \syn/\sen/\med: Insta shift
+		\item [5] \rav/\rav/\sab: (tank attacks with [3], \textbf{Elixir} before stagger) \textbf{Repeat}\to \textbf{Cold Blood} after stagger\to wait for Deprotect, Poison, Imperil (Fire-Thunder-Fire-Thunder)
+		\item [1] \com/\com/\med: \textbf{Repeat} until Judgment
+		\item [6] \rav/\rav/\rav: \textbf{Renew}\to \textbf{Fire-Thunder-Fire-Thunder}\to \textbf{Summon}\to \textbf{Repeat}
+		\item [5] \rav/\rav/\sab: \textbf{Repeat}
+		\item [1] \com/\com/\med: \textbf{Repeat}\to refresh with [2] until Dies Irae or Brynhildr is about to die
+		\item Gestalt: \underline{if close} \textbf{X} then mash \textbf{Down+O}, \underline{if not close} stall then \textbf{Up+O}
+		\item [1] \com/\com/\med: \textbf{Repeat} until victory |\skip|\skip|\skip|\skip|\skip|\skip
+	\end{fight}
+	\begin{fight}{Orphan 2}
+		\item [2] \com/\com/\rav: \textbf{Blitz}
+		\item [4] \syn/\rav/\rav: \textbf{Auto-support} Sazh\to Vanille\to Snow\to cancel Snow
+		\item [6] \rav/\rav/\rav: \textbf{Fire-Thunder-Fire-Thunder}
+		\item [4] \syn/\rav/\rav: \textbf{Enthunder-Bravery} Sazh\to \textbf{Enthunder} Snow\to cancel Snow
+		\item [5] \rav/\rav/\sab: Repeat until stagger (\to \textbf{Renew})\to \textbf{Cold Blood}\to (\textbf{Painkiller}\to \textbf{Auto-chain}\to) wait for Deprotect and Imperil
+		\item [1] \com/\com/\med: \textbf{Auto-battle} 1-2 Attack\to \textbf{Blitz x2} as Orphan lands\to \textbf{Repeat} or \textbf{Auto-battle}
+	\end{fight}
+	
+	Stop timing after the last input in the result screen.
+	
+
+
+\end{document}
