@@ -1,0 +1,96 @@
+\documentclass[a4paper, fontsize=11pt, DIV=26, parskip=full]{scrartcl}
+\usepackage{color}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage[page]{appendix}
+\usepackage{pifont}
+
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+\tcbset{top=1.5mm, bottom=0mm}
+
+\usepackage{scrlayer-scrpage}
+\clearpairofpagestyles
+\ofoot{Chapter \thesection}
+\cfoot{\thepage}
+
+\usepackage[bookmarks=true]{hyperref}
+
+\setlength{\parskip}{0mm}
+\let\olditem\item
+\renewcommand{\item}{%
+	\olditem\vspace{-5pt}}
+\renewcommand*{\sectionformat}{}
+\RedeclareSectionCommand[font=\huge\centering]{section}
+
+\newenvironment{fight}[1]{
+	\begin{tcolorbox}[enhanced, fonttitle={\bfseries}, title=#1]
+		\begin{itemize}[leftmargin=*]
+	}{\end{itemize}\end{tcolorbox}}
+\newenvironment{menu}{
+	\begin{tcolorbox}[enhanced, colframe=yellow!50!red,	colbacktitle=yellow!50!red, coltitle=red!25!black, title=\textbf{Menu}]
+		\begin{itemize}[leftmargin=*]
+	}{\end{itemize}\end{tcolorbox}}
+\newenvironment{shop}[1]{
+	\begin{tcolorbox}[enhanced, colframe=red!75!black, title=\textbf{Shop \ding{220} \textit{#1}}]
+		\begin{itemize}[leftmargin=*]
+		}{\end{itemize}\end{tcolorbox}}
+\newenvironment{upgrade}{
+	\begin{tcolorbox}[enhanced, colframe=green!50!black, title=\textbf{Upgrade}]
+		\begin{itemize}[leftmargin=*]
+		}{\end{itemize}\end{tcolorbox}}
+\newenvironment{mainlist}{\begin{dinglist}{113}}{\end{dinglist}}
+
+\newcommand{\role}[2]{\textbf{#2#1}}
+\newcommand{\com}{\role{COM}{\color{red}}}
+\newcommand{\rav}{\role{RAV}{\color{blue}}}
+\newcommand{\sen}{\role{SEN}{\color[rgb]{0.75,0.75,0}}}
+\newcommand{\med}{\role{MED}{\color{green}}}
+\newcommand{\syn}{\role{SYN}{\color[rgb]{0.58,0,0.83}}}
+\newcommand{\sab}{\role{SAB}{\color{gray}}}
+
+\renewcommand{\skip}{{\textcolor{blue}{CS}}}
+\newcommand{\skips}[1]{{\textcolor{blue}{#1 CS's}}}
+\newcommand{\dodge}[1]{{\textcolor[rgb]{1,0,0}{#1}}}
+\newcommand{\shortfight}[1]{\colorbox[rgb]{0.3,0.3,0.3}{\bfseries\textcolor{white}{#1}}}
+\newcommand{\newrole}[1]{{[}#1{]}}
+\renewcommand{\to}{ \ding{219} }
+\renewcommand{\star}{\ding{72} }
+
+\begin{document}
+	\textbf{\Large Based on LewdDolphin's Snow route notes, reformat by Hoishin}
+
+	Timing starts when you press New Game.
+
+	\hrulefill
+	\input{./chapters/1.tex}
+	\hrulefill
+	\input{./chapters/2.tex}
+	\hrulefill
+	\input{./chapters/3.tex}
+	\hrulefill
+	\input{./chapters/4.tex}
+	\hrulefill
+	\input{./chapters/5.tex}
+	\hrulefill
+	\input{./chapters/6.tex}
+	\hrulefill
+	\input{./chapters/7.tex}
+	\hrulefill
+	\input{./chapters/8.tex}
+	\hrulefill
+	\input{./chapters/9.tex}
+	\hrulefill
+	\input{./chapters/10.tex}
+	\hrulefill
+	\input{./chapters/11.tex}
+	\hrulefill
+	\input{./chapters/12.tex}
+	\hrulefill
+	\input{./chapters/13.tex}
+
+	Stop timing after the last input in the result screen.
+\end{document}
