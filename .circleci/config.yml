@@ -1,0 +1,16 @@
+version: 2
+
+jobs:
+    build:
+        docker:
+            - image: hoishin/texlive:18.04
+        steps:
+            - run:
+                name: Generate PDF
+                command: |
+                    pdflatex main.tex
+                    pdflatex main.tex
+            - run:
+                name: Deploy
+                command: |
+                    scp main.pdf ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_DEST}
