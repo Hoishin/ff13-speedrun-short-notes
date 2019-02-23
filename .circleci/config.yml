@@ -6,11 +6,37 @@ jobs:
             - image: hoishin/texlive:18.04
         steps:
             - run:
+                name: Install required TeX packages
+                command: |
+                    tlmgr init-usertree
+                    tlmgr install enumitem appendix tcolorbox pgf environ trimspaces
+            - checkout
+            - run:
                 name: Generate PDF
                 command: |
                     pdflatex main.tex
                     pdflatex main.tex
-            - run:
-                name: Deploy
-                command: |
-                    scp main.pdf ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_DEST}
+            - persist_to_workspace:
+                root: '.'
+                paths:
+                    - main.pdf
+    deploy:
+        machine:
+            enabled: true
+        steps:
+            - attach_workspace:
+                at: '.'
+            - run: scp main.pdf ${DEPLOY_DEST}
+
+workflows:
+    version: 2
+    build-and-deploy:
+        jobs:
+            - build
+            - deploy:
+                requires:
+                    - build
+                filters:
+                    branches:
+                        only:
+                            - master
