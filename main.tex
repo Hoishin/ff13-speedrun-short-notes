@@ -14,10 +14,9 @@
 
 \usepackage{scrlayer-scrpage}
 \clearpairofpagestyles
-\ofoot{Chapter \thesection}
 \cfoot{\thepage}
 
-\usepackage[bookmarks=true]{hyperref}
+\usepackage[bookmarks=true, hidelinks]{hyperref}
 
 \setlength{\parskip}{0mm}
 \let\olditem\item
@@ -60,37 +59,26 @@
 \renewcommand{\to}{ \ding{219} }
 \renewcommand{\star}{\ding{72} }
 
+\title{FF13 Notes, the Short Version}
+\author{Hoishin}
+
+\setcounter{secnumdepth}{0}
+
 \begin{document}
-\textbf{\Large Based on LewdDolphin's Snow route notes, reformatted by Hoishin}
-
-Timing starts when you press New Game.
-
-\hrulefill
-\input{./chapters/1.tex}
-\hrulefill
-\input{./chapters/2.tex}
-\hrulefill
-\input{./chapters/3.tex}
-\hrulefill
-\input{./chapters/4.tex}
-\hrulefill
-\input{./chapters/5.tex}
-\hrulefill
-\input{./chapters/6.tex}
-\hrulefill
-\input{./chapters/7.tex}
-\hrulefill
-\input{./chapters/8.tex}
-\hrulefill
-\input{./chapters/9.tex}
-\hrulefill
+\maketitle
+\tableofcontents
+\newpage
+\input{./chapters/01.tex}
+\input{./chapters/02.tex}
+\input{./chapters/03.tex}
+\input{./chapters/04.tex}
+\input{./chapters/05.tex}
+\input{./chapters/06.tex}
+\input{./chapters/07.tex}
+\input{./chapters/08.tex}
+\input{./chapters/09.tex}
 \input{./chapters/10.tex}
-\hrulefill
 \input{./chapters/11.tex}
-\hrulefill
 \input{./chapters/12.tex}
-\hrulefill
 \input{./chapters/13.tex}
-
-Stop timing after the last input in the result screen.
 \end{document}
