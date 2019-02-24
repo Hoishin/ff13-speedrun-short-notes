@@ -2,92 +2,95 @@
 
 \begin{mainlist}
 	\item \skip
-	\item \shortfight{Ghast} \textbf{Auto} non-default target \to \textbf{Blitz}
-		\to \textbf{Attack x2} |\skip
+	\item \shortfight{Ghast} \action{Auto}[non-default target]\to\action{Blitz}\to\action{Attack x2}|\skip
 	\item \skips{3}
 \end{mainlist}
-\begin{shop}{B\&W Outfitters}
-	\item Sell: \textbf{Phoenix Down} and/or \textbf{Credit Chip} for 1000 gil
-	\item Buy: \textbf{Magician's Mark}
+
+\begin{shop}{\shopacc}
+	\item Sell: \action{Phoenix Down}/\action{Credit Chip} for 1000 gil
+	\item Buy: \action{Magician's Mark}
 \end{shop}
+
 \begin{menu}
 	\item Paradigms
 	\begin{tabular}{cccl}
-		(\rav)         & \rav & \rav &             \\
-		\com           & \sen & \med &             \\
-		\newrole{\com} & \com & \rav & --- default \\
-		\newrole{\com} & \com & \rav &
+		\chrole{\rav} & \rav & \rav &          \\
+		\com          & \sen & \med &          \\
+		\mkrole{\com} & \com & \rav & \default \\
+		\mkrole{\com} & \com & \rav &
 	\end{tabular}
 	\item Crystarium
 	\begin{itemize}
-		\item Lightning: [\com: Next]
-		\item Snow: [\com: Both side]
+		\item [1] Lightning: [\com: Next]
+		\item [2] Snow: [\com: Both side]
 	\end{itemize}
 	\item Equipment
 	\begin{itemize}
-		\item [3] Vanille: \textbf{Optimize Balanced}
-		\item [4] Sazh: \textbf{Optimize Balanced}
-		\item [2] Snow: \textbf{Optimize Balanced}
+		\item [3] Vanille: \action{Optimize Balanced}
+		\item [4] Sazh: \action{Optimize Balanced}
+		\item [2] Snow: \action{Optimize Balanced}
 	\end{itemize}
 \end{menu}
+
 \begin{mainlist}
 	\item \skip
-	\item \shortfight{PSICOM Wardens} \textbf{Auto} |\skip
+	\item \shortfight{PSICOM Wardens} \action{Auto}|\skip
 	\item \skip|\skip
 \end{mainlist}
+
 \begin{fight}{Manasvin Warmech (2)}
-	\item [3] \com/\rav/\rav: \textbf{Libra} \to \textbf{Auto}
-		|Lightning or the beam
-	\item [4] \com/\rav/\rav: \textbf{Auto} |Vanille
-	\item [1] \rav/\rav/\rav: \textbf{Potion} (If HP is less than 120) \to
-		\textbf{Auto} when Crystal Rain|Vanille
-	\item [3] \com/\com/\rav: \textbf{Auto} |Vanille
-	\item [2] \com/\sen/\med: Shift after provoke lands
-	\item [3] \com/\com/\rav: \textbf{Auto} |Cancel Snow
-	\item [4] \com/\com/\rav: \textbf{Auto} \to \textbf{Attack x2} \to
-		\textbf{Auto} |Lightning or cancel Snow
-	\item [3] \com/\com/\rav: \textbf{Auto}
+	\item [3] \com/\rav/\rav: \action{Libra}\to\action{Auto}|Lightning or beam hits Lightning
+	\item [4] \com/\rav/\rav: \action{Auto}|Vanille
+	\item [1] \rav/\rav/\rav: \action{Potion}[(if HP < 120)]\to\action{Auto}[when Crystal Rain]|Vanille
+	\item [3] \com/\com/\rav: \action{Auto}|Vanille
+	\item [2] \com/\sen/\med: |Provoke lands
+	\item [3] \com/\com/\rav: \action{Auto}|Snow
+	\item [4] \com/\com/\rav: \action{Auto}\to\action{Attack x2}\to\action{Auto}|Lightning or Snow
+	\item [3] \com/\com/\rav: \action{Auto}
 	\item \skip
 \end{fight}
+
 \begin{menu}
 	\item Paradigms
 	\begin{tabular}{cccl}
-		\com           & \rav & \rav & --- default \\
-		\com           & \med & \rav &             \\
-		\newrole{\rav} & \rav & \rav &             \\
-		\newrole{\rav} & \rav & \rav &             \\
-		\newrole{\com} & \rav & \rav &
+		\com          & \rav & \rav & \default \\
+		\com          & \med & \rav &          \\
+		\mkrole{\rav} & \rav & \rav &          \\
+		\mkrole{\rav} & \rav & \rav &          \\
+		\mkrole{\com} & \rav & \rav &
 	\end{tabular}
 \end{menu}
+
 \begin{mainlist}
 	\item \skip|\skip
 \end{mainlist}
+
 \begin{fight}{Alpha Behemoth}
-	\item [1] \com/\rav/\rav: \textbf{Auto} |Swipe
-	\item [3] \rav/\rav/\rav: \textbf{Auto} x2 |Cancel Sazh 2nd Fire
-	\item [4] \rav/\rav/\rav: \textbf{Auto} |Vanille
-	\item [1] \com/\rav/\rav: \textbf{Attack x3}
-	\item [5] \com/\rav/\rav: \textbf{Repeat} \to Refresh with [1]
+	\item [1] \com/\rav/\rav: \action{Auto}|Swipe
+	\item [3] \rav/\rav/\rav: \action{Auto}[x2]|Sazh 2nd Fire
+	\item [4] \rav/\rav/\rav: \action{Auto}|Vanille
+	\item [1] \com/\rav/\rav: \action{Attack x3}
+	\item [5] \com/\rav/\rav: \action{Repeat}|Refresh with [1]
 \end{fight}
+
 \begin{mainlist}
-	\item \skip|\skip|\skip|Grab \textbf{Phoenix Down} and \textbf{Librascope x2}
-		|\skip
+	\item \skip|\skip|\skip|Grab \action{Phoenix Down}|Grab \action{Librascope x2}|\skip
 \end{mainlist}
+
 \begin{fight}{Garuda Interceptor}
-	\item [1] \com/\rav/\rav: \textbf{Attack x3} |Midair
-	\item [5] \com/\rav/\rav: \textbf{Repeat} \to \textbf{Attack} \to \textbf{Repeat} |Midair
-	\item [1] \com/\rav/\rav: \textbf{Repeat}
+	\item [1] \com/\rav/\rav: \action{Attack x3}|Midair
+	\item [5] \com/\rav/\rav: \action{Repeat}\to\action{Attack}\to\action{Repeat}|Midair
+	\item [1] \com/\rav/\rav: \action{Repeat}
 	\item \skips{2}
-	\item [1] \com/\rav/\rav: \textbf{Attack x3} |Midair
-	\item [3] \rav/\rav/\rav: \textbf{Auto} |Lightning
-	\item [4] \rav/\rav/\rav: \textbf{Auto} |Vanille or Sazh
-	\item [3] \rav/\rav/\rav: \textbf{Auto} x2
-	\item [1] \com/\rav/\rav: \textbf{Repeat} \to Refresh with [5]
+	\item [1] \com/\rav/\rav: \action{Attack x3}|Midair
+	\item [3] \rav/\rav/\rav: \action{Auto}|Lightning
+	\item [4] \rav/\rav/\rav: \action{Auto}|Vanille or Sazh
+	\item [3] \rav/\rav/\rav: \action{Auto}[x2]
+	\item [1] \com/\rav/\rav: \action{Repeat}|Refresh with [5]
 	\item \skip|Save prompt|\skip
 \end{fight}
+
 \begin{mainlist}
-	\item \shortfight{PSICOM Rangers} \textbf{Attack x3} Ranger C \to
-		\textbf{Repeat} full HP |\skip
-	\item \shortfight{Shiva Sisters} \textbf{Attack-Ruin-Attack} \to
-		\textbf{Froststrike x3} \to \sen-tank ATB Charge |\skips{5}|Save prompt
+	\item \shortfight{PSICOM Rangers} \action{Attack x3}[Ranger C]\to\action{Repeat}[full HP]|\skip
+	\item \shortfight{Shiva Sisters} \action{Attack-Ruin-Attack}\to\action{Froststrike x3}\to\action{ATB Charge}|\skips{5}|Save prompt
 \end{mainlist}

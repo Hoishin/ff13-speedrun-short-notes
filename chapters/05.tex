@@ -6,11 +6,11 @@
 \begin{menu}
 	\item Paradigms
 	\begin{tabular}{ccl}
-		\rav       & \com       & --- default \\
-		(\med)     & (\com)     &             \\
-		\syn       & (\rav)     &             \\
-		\rav       & \rav       &             \\
-		\rav       & {[}\rav{]} &             \\
+		\rav       & \com       & \default \\
+		(\med)     & (\com)     &          \\
+		\syn       & (\rav)     &          \\
+		\rav       & \rav       &          \\
+		\rav       & {[}\rav{]} &          \\
 		{[}\rav{]} & \com       &
 	\end{tabular}
 	\item Crystarium
@@ -18,7 +18,11 @@
 		\item Hope: [\rav: \textbf{Water}]
 		\item Lightning: [\com: Backtrack to \textbf{Lifesiphon} OOR]|[\rav: \textbf{Aquastrike}]
 	\end{itemize}
-	\item Equipment: Lightning: Optimize Balanced
+	\item Equipment:
+	\begin{itemize}
+		\item Hope: Equip \textbf{Magician's Mark}
+		\item Lightning: Equip \textbf{Power Wristband\star}
+	\end{itemize}
 \end{menu}
 \begin{mainlist}
 	\item \skip|\skip|\skip|\skip
@@ -62,7 +66,11 @@
 	\item Activate elevator
 \end{fight}
 \begin{menu}
-	\item Crystarium: Lightning: [\rav: \textbf{Fire}]|[\com: \textbf{Mag+6} OOR]
+	\item Crystarium:
+	\begin{itemize}
+		\item Lightning: [\rav: \textbf{Fire}\to\textbf{Str+4} (need 1 bomb kill)]|(if no bomb kill) [\com: \textbf{Mag+6} OOR]
+		\item Hope: [\rav: \textbf{Fearsiphon} OOR]
+	\end{itemize}
 	\item Equipment
 	\begin{itemize}
 		\item Hope: Equip \textbf{Magician's Mark}
@@ -78,16 +86,24 @@
 	\item [1] \com/\rav: \textbf{\textbf{Potion}} \to \textbf{Repeat}
 	\item [4] \rav/\rav: \textbf{Repeat} with \textbf{Potion} \to Refresh with [5]
 	\item \underline{Exoproofing: Fire}: \textbf{Water-Thunder-Water-Thunder} until 180\% then wait for next one with [2]
-	\item \underline{Exoproofing: Ice}: \textbf{Auto}
-	\item \underline{Exoproofing: Lightning}: \textbf{Water x4}
-	\item \underline{Exoproofing: Water}: \textbf{Thunder x4}
-	\item Kill requirement:
+	\item \underline{Exoproofing: Ice}:
 	\begin{itemize}
-		\item 810\% Chain
-		\item HP bar ends just the left of second T in TARGET
+		\item \action{Auto}[until 500\%] |\com-buffer
+		\item [1/6] \com/\rav: \action{Attack x3}\to\action{Summon}[Near end of stagger]\to\action{Gestalt}\to\action{Zantetsuken}
 	\end{itemize}
-	\item \textbf{Summon} \to \textbf{Gestalt} \to \textbf{Zantetsuken} |\skip
+	\item \underline{Exoproofing: Lightning/Water}:
+	\begin{itemize}
+		\item [4/5] \rav/\rav: \action{Aquastrike/Sparkstrike x4}\to\action{ATB Refresh} every 9 strikes|\com-buffer if necessary
+	\end{itemize}
+	\item (If too short) \action{Summon}\to\action{Gestalt}\to\action{Zantetsuken}|\skip
+	\item (If not dead) \action{Summon}\to{Wait until dead}|\skip
 \end{fight}
+\begin{menu}
+	\item Equipment
+	\begin{itemize}
+		\item Lightning: \action{Optimize Balanced}[to remove Gladius and Power Wristband]
+	\end{itemize}
+\end{menu}
 \begin{mainlist}
 	\item \skip|Save prompt|\skips{3}|Save prompt
 \end{mainlist}
