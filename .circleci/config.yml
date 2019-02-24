@@ -9,7 +9,7 @@ jobs:
                 name: Install required TeX packages
                 command: |
                     tlmgr init-usertree
-                    tlmgr install enumitem appendix tcolorbox pgf environ trimspaces
+                    tlmgr install enumitem appendix tcolorbox pgf environ trimspaces nag
             - checkout
             - run:
                 name: Generate PDF
