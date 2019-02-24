@@ -6,7 +6,6 @@
 \usepackage[page]{appendix}
 \usepackage{pifont}
 \usepackage[hidelinks]{hyperref}
-\usepackage{xparse}
 
 \usepackage{helvet}
 \renewcommand*{\familydefault}{\sfdefault}
@@ -47,16 +46,16 @@
 \newcommand*{\syn}{\role{SYN}{\color[rgb]{0.58,0,0.83}}}
 \newcommand*{\sab}{\role{SAB}{\color{gray}}}
 
-\newcommand{\shopacc}{B\&W Outfitters}
-\newcommand{\shopitem}{Unicorn Mart}
+\newcommand*{\shopacc}{B\&W Outfitters}
+\newcommand*{\shopitem}{Unicorn Mart}
+
+\newcommand*{\mkrole}[1]{{[}#1{]}}
+\newcommand*{\chrole}[1]{(#1)}
 
 \renewcommand*{\skip}{\textcolor{blue}{CS}}
 \newcommand*{\skips}[1]{{\textcolor{blue}{#1 CS's}}}
 \newcommand*{\shortfight}[1]{\colorbox[rgb]{0.3,0.3,0.3}{\bfseries\textcolor{white}{#1}}}
-\newcommand*{\mkrole}[1]{{[}#1{]}}
-\newcommand*{\chrole}[1]{(#1)}
-\NewDocumentCommand{\action}{mo}{\textbf{#1}\IfNoValueF{#2}{\ #2}}
-\renewcommand*{\to}{ \ding{219} }
+\renewcommand*{\to}{\ding{219}}
 \renewcommand*{\star}{\ding{72}}
 \newcommand{\save}{Save Prompt}
 \newcommand{\default}{--- default}
