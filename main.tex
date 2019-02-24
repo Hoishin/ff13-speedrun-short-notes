@@ -25,34 +25,18 @@
 \renewcommand*{\sectionformat}{}
 \RedeclareSectionCommand[font=\huge\centering]{section}
 
-\newenvironment{fight}[1]{
-	\begin{tcolorbox}[enhanced, fonttitle={\bfseries}, title=#1]
-		\begin{itemize}[leftmargin=*]
-}{
-		\end{itemize}
-	\end{tcolorbox}
-}
-\newenvironment{menu}{
-	\begin{tcolorbox}[enhanced, colframe=yellow!50!red,	colbacktitle=yellow!50!red, coltitle=red!25!black, title=\textbf{Menu}]
-		\begin{itemize}[leftmargin=*]
-}{
-		\end{itemize}
-	\end{tcolorbox}
-}
-\newenvironment{shop}[1]{
-	\begin{tcolorbox}[enhanced, colframe=red!75!black, title=\textbf{Shop \ding{220} \textit{#1}}]
-		\begin{itemize}[leftmargin=*]
-}{
-		\end{itemize}
-	\end{tcolorbox}
-}
-\newenvironment{upgrade}{
-	\begin{tcolorbox}[enhanced, colframe=green!50!black, title=\textbf{Upgrade}]
-		\begin{itemize}[leftmargin=*]
-}{
-		\end{itemize}
-	\end{tcolorbox}
-}
+\newenvironment{fight}[1]
+	{\begin{tcolorbox}[enhanced, fonttitle={\bfseries}, title=#1]\begin{itemize}[leftmargin=*]}
+	{\end{itemize}\end{tcolorbox}}
+\newenvironment{menu}
+	{\begin{tcolorbox}[enhanced, colframe=yellow!50!red,	colbacktitle=yellow!50!red, coltitle=red!25!black, title=\textbf{Menu}]\begin{itemize}[leftmargin=*]}
+	{\end{itemize}\end{tcolorbox}}
+\newenvironment{shop}[1]
+	{\begin{tcolorbox}[enhanced, colframe=red!75!black, title=\textbf{Shop \ding{220} \textit{#1}}]\begin{itemize}[leftmargin=*]}
+	{\end{itemize}\end{tcolorbox}}
+\newenvironment{upgrade}
+	{\begin{tcolorbox}[enhanced, colframe=green!50!black, title=\textbf{Upgrade}]\begin{itemize}[leftmargin=*]}
+	{\end{itemize}\end{tcolorbox}}
 \newenvironment{mainlist}{\begin{dinglist}{113}}{\end{dinglist}}
 
 \newcommand*{\role}[2]{\textbf{#2#1}}

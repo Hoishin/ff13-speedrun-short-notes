@@ -50,12 +50,12 @@
 \begin{menu}
 	\item Paradigms: Move [1] to [6]
 	\begin{tabular}{cccl}
-		{[}\com{]} & \com   & \rav   &          \\
-		\com       & \rav   & (\rav) &          \\
-		(\sab)     & (\rav) & \rav   &          \\
-		\sen       & (\rav) & (\rav) &          \\
-		\sab       & (\rav) & \syn   & \default \\
-		\com       & \rav   & \rav   &
+		\mkrole{\com} & \com          & \rav          &          \\
+		\com          & \rav          & \chrole{\rav} &          \\
+		\chrole{\sab} & \chrole{\rav} & \rav          &          \\
+		\sen          & \chrole{\rav} & \chrole{\rav} &          \\
+		\sab          & \chrole{\rav} & \syn          & \default \\
+		\com          & \rav          & \rav          &
 	\end{tabular}
 	\item Crystarium
 	\begin{itemize}
@@ -89,12 +89,12 @@
 \begin{menu}
 	\item Paradigms
 	\begin{tabular}{cccl}
-		\com   & \com   & \rav   &          \\
-		\rav   & \com   & \rav   &          \\
-		(\com) & (\com) & \rav   &          \\
-		(\com) & (\com) & (\med) &          \\
-		(\com) & (\com) & \syn   & \default \\
-		(\com) & \com   & (\med) &
+		\com          & \com          & \rav          &          \\
+		\rav          & \com          & \rav          &          \\
+		\chrole{\com} & \chrole{\com} & \rav          &          \\
+		\chrole{\com} & \chrole{\com} & \chrole{\med} &          \\
+		\chrole{\com} & \chrole{\com} & \syn          & \default \\
+		\chrole{\com} & \com          & \chrole{\med} &
 	\end{tabular}
 	\item Crystarium: Lightning: [\med: \textbf{Acc} OOR]|[\com: Three]
 	\item Equipment

@@ -7,12 +7,12 @@
 \begin{menu}
 	\item Paradigms: Move [1] to [4]
 	\begin{tabular}{cccl}
-		(\rav)     & \syn   & \sab   &          \\
-		(\rav)     & \rav   & (\sab) &          \\
-		(\rav)     & (\rav) & \sen   &          \\
-		\rav       & \rav   & \com   & \default \\
-		{[}\com{]} & \rav   & \com   &          \\
-		{[}\com{]} & \rav   & \com   &
+		\chrole{\rav} & \syn          & \sab          &          \\
+		\chrole{\rav} & \rav          & \chrole{\sab} &          \\
+		\chrole{\rav} & \chrole{\rav} & \sen          &          \\
+		\rav          & \rav          & \com          & \default \\
+		\mkrole{\com} & \rav          & \com          &          \\
+		\mkrole{\com} & \rav          & \com          &
 	\end{tabular}
 	\item Crystarium
 	\begin{itemize}
@@ -40,12 +40,12 @@
 \begin{menu}
 	\item Paradigms: Move [1] to [3]
 	\begin{tabular}{ccl}
-		\syn       & \sab   & \default \\
-		\com       & \med   &          \\
-		\com       & \rav   &          \\
-		\rav       & \rav   &          \\
-		{[}\rav{]} & (\sab) &          \\
-		{[}\com{]} & (\sab) &
+		\syn          & \sab          & \default \\
+		\com          & \med          &          \\
+		\com          & \rav          &          \\
+		\rav          & \rav          &          \\
+		\mkrole{\rav} & \chrole{\sab} &          \\
+		\mkrole{\com} & \chrole{\sab} &
 	\end{tabular}
 	\item Crystarium: Sazh: [\syn: Next]|[\rav: \textbf{Aero} OOR \to \textbf{Overwhelm} OOR]
 	\item Equipment: Sazh: Doctor's Code \to \textbf{Power Wristband Lv 1}
@@ -111,12 +111,12 @@
 	\item Battle Team: Lightning/\textbf{Sazh}/\textbf{Snow} (2 \to 5, 4 \to 3)
 	\item Paradigms
 	\begin{tabular}{cccl}
-		\com       & \syn       & (\com) & \default \\
-		(\rav)     & \rav       & \rav   &          \\
-		(\com)     & \syn       & \sen   &          \\
-		{[}\rav{]} & (\rav)     & (\rav) &          \\
-		\com       & {[}\com{]} & \com   &          \\
-		\com       & {[}\com{]} & \com   &
+		\com          & \syn          & \chrole{\com} & \default \\
+		\chrole{\rav} & \rav          & \rav          &          \\
+		\chrole{\com} & \syn          & \sen          &          \\
+		\mkrole{\rav} & \chrole{\rav} & \chrole{\rav} &          \\
+		\com          & \mkrole{\com} & \com          &          \\
+		\com          & \mkrole{\com} & \com          &
 	\end{tabular}
 	\item Crystarium
 	\begin{itemize}

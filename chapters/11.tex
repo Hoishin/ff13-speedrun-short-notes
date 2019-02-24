@@ -17,12 +17,12 @@
 	\item Battle Team: \textbf{Sazh}/\textbf{Vanille}/\textbf{Snow} (1 \to 4, 5 \to 3, 2 \to 6)
 	\item Paradigms
 	\begin{tabular}{cccl}
-		\com       & \med       & (\com) &          \\
-		\com       & (\sab)     & \rav   &          \\
-		\syn       & \med       & (\com) &          \\
-		{[}\com{]} & (\sab)     & \com   &          \\
-		\syn       & {[}\sab{]} & \com   & \default \\
-		{[}\com{]} & \rav       & \com   &
+		\com          & \med          & \chrole{\com} &          \\
+		\com          & \chrole{\sab} & \rav          &          \\
+		\syn          & \med          & \chrole{\com} &          \\
+		\mkrole{\com} & \chrole{\sab} & \com          &          \\
+		\syn          & \mkrole{\sab} & \com          & \default \\
+		\mkrole{\com} & \rav          & \com          &
 	\end{tabular}
 \end{menu}
 \begin{fight}{Behemoth King \& Megistotherian}
@@ -45,12 +45,12 @@
 \begin{menu}
 	\item Paradigms: Move [1] to [2]
 	\begin{tabular}{cccl}
-		(\syn) & \sab & \rav &          \\
-		\com   & \med & \com &          \\
-		\syn   & \med & \com & \default \\
-		\com   & \sab & \com &          \\
-		\syn   & \sab & \com &          \\
-		\com   & \rav & \com &
+		\chrole{\syn} & \sab & \rav &          \\
+		\com          & \med & \com &          \\
+		\syn          & \med & \com & \default \\
+		\com          & \sab & \com &          \\
+		\syn          & \sab & \com &          \\
+		\com          & \rav & \com &
 	\end{tabular}
 	\item Crystarium
 	\begin{itemize}
@@ -130,12 +130,12 @@
 \begin{menu}
 	\item Paradigms
 	\begin{tabular}{cccl}
-		\syn   & \sab & \rav   & \default \\
-		\com   & \med & \com   &          \\
-		\syn   & \med & \com   &          \\
-		\com   & \sab & \com   &          \\
-		(\rav) & \sab & (\rav) &          \\
-		\com   & \rav & \com   &
+		\syn          & \sab & \rav          & \default \\
+		\com          & \med & \com          &          \\
+		\syn          & \med & \com          &          \\
+		\com          & \sab & \com          &          \\
+		\chrole{\rav} & \sab & \chrole{\rav} &          \\
+		\com          & \rav & \com          &
 	\end{tabular}
 	\item Crystarium
 	\begin{itemize}
@@ -161,12 +161,12 @@
 \begin{menu}
 	\item Paradigms
 	\begin{tabular}{cccl}
-		\syn   & (\rav) & (\sen) &          \\
-		\com   & (\rav) & (\rav) &          \\
-		(\rav) & (\rav) & (\sen) &          \\
-		\com   & (\rav) & \com   & \default \\
-		\rav   & \sab   & (\sen) &          \\
-		\com   & \rav   & \com   &
+		\syn          & \chrole{\rav} & \chrole{\sen} &          \\
+		\com          & \chrole{\rav} & \chrole{\rav} &          \\
+		\chrole{\rav} & \chrole{\rav} & \chrole{\sen} &          \\
+		\com          & \chrole{\rav} & \com          & \default \\
+		\rav          & \sab          & \chrole{\sen} &          \\
+		\com          & \rav          & \com          &
 	\end{tabular}
 	\item Battle Team: \textbf{Vanille}/\textbf{Sazh}/Snow (1 \to 2)
 \end{menu}
@@ -214,12 +214,12 @@
 \begin{menu}
 	\item Paradigms
 	\begin{tabular}{cccl}
-		(\com) & (\com) & (\med) &          \\
-		(\rav) & \rav   & \rav   &          \\
-		\rav   & (\rav) & (\sab) & \default \\
-		\rav   & \rav   & \med   &          \\
-		\rav   & (\rav) & \sab   &          \\
-		\com   & \com   & \rav   &
+		\chrole{\com} & \chrole{\com} & \chrole{\med} &          \\
+		\chrole{\rav} & \rav          & \rav          &          \\
+		\rav          & \chrole{\rav} & \chrole{\sab} & \default \\
+		\rav          & \rav          & \med          &          \\
+		\rav          & \chrole{\rav} & \sab          &          \\
+		\com          & \com          & \rav          &
 	\end{tabular}
 	\item Crystarium
 	\begin{itemize}
