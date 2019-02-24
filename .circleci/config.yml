@@ -10,6 +10,7 @@ jobs:
                 command: |
                     tlmgr init-usertree
                     tlmgr install enumitem appendix tcolorbox pgf environ trimspaces nag
+                    apt-get install make
             - checkout
             - run: make build
             - persist_to_workspace:
